@@ -4,8 +4,11 @@ import Link from "next/link";
 
 import { motion } from "framer-motion";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
+
   return (
     <nav className={styles.app__navbar}>
       <div className={styles["app__navbar-logo"]}>
@@ -23,7 +26,9 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className={styles["app__navbar-menu"]}></div>
+      <div className={styles["app__navbar-menu"]}>
+        <HiMenuAlt4 onClick={() => setToggle(false)} />
+      </div>
     </nav>
   );
 };

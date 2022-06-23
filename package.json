@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "framer-motion": "^6.3.13",
     "sass": "^1.52.3"
   }
 }
