@@ -18,7 +18,9 @@
   align-items: center;
   a {
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--gray-color);
 
     @media screen and (min-width: 2000px) {
       font-size: 45px;
@@ -49,6 +51,24 @@
     }
 
     a {
+      color: var(--gray-color);
+      text-decoration: none;
+      flex-direction: column;
+
+      text-transform: uppercase;
+      font-weight: 500;
+
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+    &:hover {
+      div {
+        background-color: var(--secondary-color);
+        transition: all 0.3s ease-in-out;
+      }
     }
   }
 }
