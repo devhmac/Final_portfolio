@@ -2,6 +2,9 @@ import styles from "../styles/Navbar.module.scss";
 import homeStyles from "../styles/home.module.scss";
 import Link from "next/link";
 
+import { motion } from "framer-motion";
+import { HiMenuAlt4, HiX } from "react-icons/hi";
+
 const Navbar = () => {
   return (
     <nav className={styles.app__navbar}>
@@ -19,6 +22,8 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+
+      <div className={styles["app__navbar-menu"]}></div>
     </nav>
   );
 };
