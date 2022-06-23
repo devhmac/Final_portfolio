@@ -27,7 +27,22 @@ const Navbar = () => {
       </ul>
 
       <div className={styles["app__navbar-menu"]}>
-        <HiMenuAlt4 onClick={() => setToggle(false)} />
+        <HiMenuAlt4 onClick={() => setToggle(true)} />
+        {toggle && (
+          <motion.div
+            whileInView={{ x: [300, 0] }}
+            transition={{ duration: 0.85, ease: "easeOut" }}
+          >
+            <HiX onclick={() => setToggle(false)} />
+            {["home", "about", "work", "skills", "contact"].map((item) => (
+              <li key={item}>
+                <a href={`#${item}`} onclick={() => setToggle(false)}>
+                  {item}
+                </a>
+              </li>
+            ))}
+          </motion.div>
+        )}
       </div>
     </nav>
   );
