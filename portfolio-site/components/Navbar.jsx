@@ -3,7 +3,7 @@ import styles from "../styles/Navbar.module.scss";
 const Navbar = () => {
   return (
     <nav className={styles.app__navbar}>
-      <div>Devin MacGillivray</div>
+      <div className={styles["app__navbar-logo"]}>Devin MacGillivray</div>
       <ul>
         {["home", "about", "work", "skills", "contact"].map((item) => (
           <li key={`link-${item}`}>
