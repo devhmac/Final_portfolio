@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar'
 
 import { About, Footer, Header, Skills, Testimonial, Work } from '../container/containerIndex'
 
-import { motion } from 'framer-motion'
 
 export default function Home() {
   return (
