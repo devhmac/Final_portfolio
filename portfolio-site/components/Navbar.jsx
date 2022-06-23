@@ -1,7 +1,11 @@
 import styles from "../styles/Navbar.module.scss";
 
 const Navbar = () => {
-  return <div clasname={styles.app}>Nav</div>;
+  return (
+    <nav>
+      <div>Nav</div>
+    </nav>
+  );
 };
 
 export default Navbar;
