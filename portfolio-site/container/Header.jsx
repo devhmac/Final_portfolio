@@ -1,9 +1,23 @@
 import styles from "../styles/Header.module.scss";
 import { motion } from "framer-motion";
 
+const scaleVariants = {
+  whileInView: {
+    scale: [0, 1],
+    opacity: [0, 1],
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+    },
+  },
+};
+
 const Header = () => {
   return (
-    <div className={`${styles["app__header"]} ${styles["app__flex"]}`}>
+    <div
+      id={styles.home}
+      className={`${styles["app__header"]} ${styles["app__flex"]}`}
+    >
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -40,8 +54,12 @@ const Header = () => {
           alt="profile_circle"
         />
       </motion.div>
-
-      <motion.div variant></motion.div>
+      {/* dont Think I actually want these */}
+      {/* <motion.div
+        variant={scaleVariants}
+        whileInView={scaleVariants.whileInView}
+        className={styles["app__header-circles"]}
+      ></motion.div> */}
     </div>
   );
 };
