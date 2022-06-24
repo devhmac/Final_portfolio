@@ -32,13 +32,17 @@
   justify-content: flex-start;
   align-items: center;
   a {
-    font-size: 30px;
+    font-size: 23px;
     font-weight: 500;
     text-decoration: none;
     color: var(--gray-color);
 
     @media screen and (min-width: 2000px) {
       font-size: 45px;
+    }
+    @media screen and (min-width: 400px) {
+      font-size: 30px;
+      background-color: red;
     }
   }
 
@@ -86,7 +90,7 @@
       }
     }
   }
-  @media screen and (max: width 900px) {
+  @media screen and (max-width: 800px) {
     display: none;
   }
 }
@@ -155,8 +159,20 @@
           font-size: 1rem;
           text-transform: uppercase;
           font-weight: 500;
+
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--secondary-color);
+          }
         }
       }
     }
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 800px) {
+    display: none;
   }
 }
