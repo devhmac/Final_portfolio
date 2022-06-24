@@ -18,10 +18,6 @@
 #home {
   position: relative;
   // make this a gradiant
-  background: url("../public/img/assets/bgIMG.png");
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center;
 
   .app__wrapper {
     padding: 0;
@@ -80,7 +76,7 @@
     border-radius: 15px;
     flex-direction: row;
     width: auto;
-    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.25),
       -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
   }
 
@@ -115,7 +111,7 @@
 
     border: 1px solid white;
     border-radius: 10%;
-    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25),
       -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
 
     @media screen and (max-width: 1200px) {
