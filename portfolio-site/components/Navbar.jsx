@@ -31,12 +31,12 @@ const Navbar = () => {
       </ul>
 
       <div className={styles["app__navbar-menu"]}>
-        {!toggle && <HiMenuAlt4 onClick={handleOnClick} />}
+        <HiMenuAlt4 onClick={handleOnClick} />
 
         {toggle && (
           <motion.div
             initial={{ width: 0 }}
-            animate={{ width: 70 }}
+            animate={{ width: 300 }}
             transition={{ duration: 0.85, ease: "easeOut" }}
           >
             <HiX onClick={() => setToggle(false)} />
