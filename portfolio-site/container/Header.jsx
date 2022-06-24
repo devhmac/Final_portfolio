@@ -46,21 +46,7 @@ const Header = () => {
         className={styles["app__header-img"]}
       >
         <img src="img/assets/me-nobg.png" alt="profile_bg" />
-
-        {/* <motion.img
-          whileInView={{ scale: [0, 1] }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className={styles["overlay_circle"]}
-          src="/img/assets/circle.svg"
-          alt="profile_circle"
-        /> */}
       </motion.div>
-      {/* dont Think I actually want these */}
-      {/* <motion.div
-        variant={scaleVariants}
-        whileInView={scaleVariants.whileInView}
-        className={styles["app__header-circles"]}
-      ></motion.div> */}
     </div>
   );
 };
