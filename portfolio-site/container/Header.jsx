@@ -43,17 +43,17 @@ const Header = () => {
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className={styles["app_header-img"]}
+        className={styles["app__header-img"]}
       >
         <img src="img/assets/me-nobg.png" alt="profile_bg" />
 
-        <motion.img
+        {/* <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
           className={styles["overlay_circle"]}
           src="/img/assets/circle.svg"
           alt="profile_circle"
-        />
+        /> */}
       </motion.div>
       {/* dont Think I actually want these */}
       {/* <motion.div
