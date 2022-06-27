@@ -6,22 +6,22 @@ const abouts = [
   {
     title: "Customer Relationships",
     description: "I am a dev dev dev",
-    imgURL: "",
+    imgURL: "img/assets/about01.png",
   },
   {
     title: "Service Innovation",
     description: "I am a dev dev dev",
-    imgURL: "",
+    imgURL: "img/assets/about02.png",
   },
   {
     title: "Business Operations",
     description: "I am a dev dev dev",
-    imgURL: "",
+    imgURL: "img/assets/about03.png",
   },
   {
     title: "Full Stack Development",
     description: "I am a dev dev dev",
-    imgURL: "",
+    imgURL: "img/assets/about04.png",
   },
 ];
 
@@ -43,7 +43,12 @@ const About = () => {
             key={about.title + index}
           >
             <img src={about.imgURL} alt={about.title + " IMG"} />
-            <h2 className={styles["bold-text"]}>hello</h2>
+            <h2 className={styles["bold-text"]} style={{ marginTop: 20 }}>
+              {about.title}
+            </h2>
+            <p className={styles["p-text"]} style={{ marginTop: 10 }}>
+              {about.description}
+            </p>
           </motion.div>
         ))}
       </div>
