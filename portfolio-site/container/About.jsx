@@ -17,8 +17,8 @@ const About = () => {
   return (
     <>
       <h2 className={styles["head-text"]}>
-        A Public Service Leader with{" "}
-        <span>skills in Full Stack Development</span>
+        A Public Service Leader with skills in{" "}
+        <span>Full Stack Development</span>
       </h2>
 
       {/* Maps through skills in abouts variable above */}
