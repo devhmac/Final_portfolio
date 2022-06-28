@@ -1,7 +1,7 @@
 import styles from "../styles/About.module.scss";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-
+import { urlFor, client } from "../client";
 // change these to change about section, will directly update
 const abouts = [
   {
@@ -28,6 +28,11 @@ const abouts = [
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "abouts"]';
+  }, []);
+
   return (
     <>
       <h2 className={styles["head-text"]}>
