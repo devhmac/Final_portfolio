@@ -2,7 +2,6 @@ import styles from "../styles/About.module.scss";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { urlFor, client } from "../client";
-// change these to change about section, will directly update
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -10,7 +9,9 @@ const About = () => {
   useEffect(() => {
     const query = '*[_type == "abouts"]';
 
-    client.fetch(query).then((data) => setAbouts(data));
+    client.fetch(query).then((data) => {
+      setAbouts(data);
+    });
   }, []);
 
   return (
@@ -31,7 +32,7 @@ const About = () => {
             className={styles["app__profile-item"]}
             key={about.title + index}
           >
-            <img src={about.imgURL} alt={about.title + " IMG"} />
+            <img src={urlFor(about.imgUrl)} alt={about.title + " IMG"} />
             <h2 className={styles["bold-text"]} style={{ marginTop: 20 }}>
               {about.title}
             </h2>
