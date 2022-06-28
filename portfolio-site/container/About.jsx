@@ -3,34 +3,14 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { urlFor, client } from "../client";
 // change these to change about section, will directly update
-const abouts = [
-  {
-    title: "Customer Relationships",
-    description: "I am a dev dev dev",
-    imgURL: "img/assets/about01.png",
-  },
-  {
-    title: "Service Innovation",
-    description: "I am a dev dev dev",
-    imgURL: "img/assets/about02.png",
-  },
-  {
-    title: "Business Operations",
-    description: "I am a dev dev dev",
-    imgURL: "img/assets/about03.png",
-  },
-  {
-    title: "Full Stack Development",
-    description: "I am a dev dev dev",
-    imgURL: "img/assets/about04.png",
-  },
-];
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
 
   useEffect(() => {
     const query = '*[_type == "abouts"]';
+
+    client.fetch(query).then((data) => setAbouts(data));
   }, []);
 
   return (
