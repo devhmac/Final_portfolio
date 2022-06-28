@@ -27,6 +27,7 @@ const abouts = [
 ];
 
 const About = () => {
+  const [abouts, setAbouts] = useState([]);
   return (
     <>
       <h2 className={styles["head-text"]}>
