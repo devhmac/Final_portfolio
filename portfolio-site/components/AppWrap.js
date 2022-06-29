@@ -1,10 +1,20 @@
-import { NavigationDots, SocialMedia } from '.'
+import { NavigationDots, SocialMedia } from './'
+import styles from '../styles/Home.module.scss'
 
 
 
-const AppWrap = () => {
+const AppWrap = (Component, idName, classNames) => function HOC() {
   return (
-    <div>AppWrap</div>
+    <div
+      id={styles[`${idName}`]}
+      className={`${styles['app__container']} ${styles[`${classNames}`]}`
+        >
+      <SocialMedia />
+
+      <div className={`${styles.app__wrapper} ${styles.app__flex}`}>
+        <Component/>
+      </div>
+    </div >
   )
 }
 

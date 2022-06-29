@@ -4,10 +4,11 @@ import {
   FaMedium,
   FaTwitterSquare,
 } from "react-icons/fa";
+import styles from "../styles/Home.module.scss";
 
 const SocialMedia = () => {
   return (
-    <div className="app__social">
+    <div className={styles.app__social}>
       <div>
         <FaLinkedin />
       </div>
