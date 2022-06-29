@@ -1,4 +1,5 @@
 import styles from "../styles/Home.module.scss";
+import Link from "next/link";
 
 const NavigationDots = ({ active }) => {
   return (
@@ -9,7 +10,7 @@ const NavigationDots = ({ active }) => {
           key={item + index}
           className={styles["app__navigation-dot"]}
           style={active === item ? { backgroundColor: "#313bac" } : {}}
-        />
+        ></a>
       ))}
     </div>
   );

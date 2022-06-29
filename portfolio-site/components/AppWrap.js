@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.scss'
 const AppWrap = (Component, idName, classNames) => function HOC() {
   return (
     <div
-      id={styles[`${idName}`]}
+      id={idName}
       className={`${styles['app__container']} ${styles[`${classNames}`]}`}
     >
       <SocialMedia />

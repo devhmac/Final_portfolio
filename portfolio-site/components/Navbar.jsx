@@ -25,7 +25,10 @@ const Navbar = () => {
             key={`link-${item}`}
           >
             <div />
-            <a href={`#${item}`}>{item}</a>
+            {console.log(item)}
+            <Link href={`#${item}`}>
+              <a href={`#${item}`}>{item}</a>
+            </Link>
           </li>
         ))}
       </ul>
@@ -44,9 +47,9 @@ const Navbar = () => {
             <ul>
               {["home", "about", "work", "skills", "contact"].map((item) => (
                 <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                  <Link href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
