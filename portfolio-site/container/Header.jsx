@@ -31,15 +31,9 @@ const Header = () => {
             </div>
           </div>
           <div className={`${styles["tag-cmp"]} ${styles.app__flex}`}>
-            {/* <p className={styles["p-text"]}>Leadership</p>
-            <p className={styles["p-text"]}>Customer Relationships</p>
-            <p className={styles["p-text"]}>Service Design</p>
-            <p className={styles["p-text"]}>Digital Transformation</p>
-            <p className={styles["p-text"]}>Full Stack Development</p> */}
-            <p className={styles["p-text"]}>Empowering Individuals</p>
             <p className={styles["p-text"]}>
-              A dedicated <br /> public service leader <br /> with skills in
-              full stack <br /> development
+              A Public Service Leader <br />
+              with skills in Full-Stack Development
             </p>
           </div>
         </div>
