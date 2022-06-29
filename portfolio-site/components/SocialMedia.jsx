@@ -21,7 +21,6 @@ const SocialMedia = () => {
       <div>
         <FaTwitterSquare />
       </div>
-      SocialMedia
     </div>
   );
 };
