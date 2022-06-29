@@ -23,6 +23,12 @@ const About = () => {
 
       {/* Maps through skills in abouts variable above */}
 
+      <p className={`${styles["p-text"]} ${styles["head-body"]} `}>
+        Excited by the Intersection of customer need and technology solutions.
+        My passion for software development, customer relationship expertise,
+        and Degree in Psychology, give me a unique vision when building service
+        delivery processes and systems with modern strategies and technologies.
+      </p>
       <div className={styles.app__profiles}>
         {abouts.map((about, index) => (
           <motion.div
