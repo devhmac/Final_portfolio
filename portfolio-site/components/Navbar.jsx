@@ -26,9 +26,7 @@ const Navbar = () => {
           >
             <div />
             {console.log(item)}
-            <Link href={`#${item}`}>
-              <a href={`#${item}`}>{item}</a>
-            </Link>
+            <Link href={`#${item}`}>{item}</Link>
           </li>
         ))}
       </ul>
