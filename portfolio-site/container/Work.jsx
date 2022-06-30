@@ -1,5 +1,7 @@
 import styles from "../styles/Work.module.scss";
 import { useState, useEffect } from "react";
+import Link from "next/link";
+
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 
@@ -58,6 +60,47 @@ const Work = () => {
               className={`${styles["app__work-img"]} ${styles["app__flex"]}`}
             >
               <img src={urlFor(work.imgUrl)} alt={work.name} />
+
+              <motion.div
+                whileHover={{ opacity: [0, 1] }}
+                transition={{
+                  duration: 0.25,
+                  ease: "easeInOut",
+                  staggerChildren: 0.5,
+                }}
+                className={`${styles["app__work-hover"]} ${styles["app__flex"]}`}
+              >
+                <Link
+                  href={work.projectLink}
+                  title="To Project Site"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <motion.div
+                    whileInView={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 0.9] }}
+                    transition={{ duration: 0.25 }}
+                    className={styles["app__flex"]}
+                  >
+                    <AiFillEye />
+                  </motion.div>
+                </Link>
+                <Link
+                  href={work.projectLink}
+                  title="To Github"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <motion.div
+                    whileInView={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 0.9] }}
+                    transition={{ duration: 0.25 }}
+                    className={styles["app__flex"]}
+                  >
+                    <AiFillGithub />
+                  </motion.div>
+                </Link>
+              </motion.div>
             </div>
           </div>
         ))}
