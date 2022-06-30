@@ -102,6 +102,15 @@ const Work = () => {
                 </Link>
               </motion.div>
             </div>
+
+            <div
+              className={`${styles["app__work-content"]} ${styles["app__flex"]}`}
+            >
+              <h4 className={styles["bold-text"]}>{work.title}</h4>
+              <p className={styles["p-text"]} style={{ marginTop: 10 }}>
+                {work.description}
+              </p>
+            </div>
           </div>
         ))}
       </motion.div>
