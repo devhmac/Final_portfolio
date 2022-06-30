@@ -110,6 +110,11 @@ const Work = () => {
               <p className={styles["p-text"]} style={{ marginTop: 10 }}>
                 {work.description}
               </p>
+              <div
+                className={`${styles["app__work-tag"]} ${styles["app__flex"]}`}
+              >
+                <p className={styles["p-text"]}>{work.tags[0]}</p>
+              </div>
             </div>
           </div>
         ))}
