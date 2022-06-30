@@ -8,6 +8,8 @@ import { urlFor, client } from "../client";
 
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState("All");
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+
   const handleWorkFilter = (item) => {};
 
   return (
@@ -16,18 +18,26 @@ const Work = () => {
         My <span>Work</span>
       </h2>
       <div className={styles["app__work-filter"]}>
-        {["Full Stack", "Front End", "React", "All"].map((item, index) => {
+        {["Full Stack", "Front End", "React", "All"].map((item, index) => (
           <div
             key={index}
-            onClick={() => handleWorkFilter(item)}
+            onClick={handleWorkFilter(item)}
             className={`${styles["app__work-filter-item"]} ${
               styles["app__flex"]
-            } ${styles["ap-text"]} ${
+            } ${styles["p-text"]} ${
               activeFilter === item ? styles["item-active"] : ""
             }`}
-          ></div>;
-        })}
+          >
+            {item}
+          </div>
+        ))}
       </div>
+
+      <motion.div
+        animate={animateCard}
+        transition={{ duration: 0.5, delayChildren: 0.5 }}
+        className={styles["app__work-portfolio"]}
+      ></motion.div>
     </>
   );
 };
