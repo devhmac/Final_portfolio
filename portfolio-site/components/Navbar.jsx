@@ -25,7 +25,7 @@ const Navbar = () => {
             key={`link-${item}`}
           >
             <div />
-            {console.log(item)}
+
             <Link href={`#${item}`}>{item}</Link>
           </li>
         ))}
