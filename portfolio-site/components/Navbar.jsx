@@ -19,7 +19,7 @@ const Navbar = () => {
         <Link href="/">Devin MacGillivray</Link>
       </div>
       <ul className={styles["app__navbar-links"]}>
-        {["home", "about", "work", "skills", "contact"].map((item) => (
+        {["about", "work", "skills", "contact"].map((item) => (
           <li
             className={`${styles["app__flex"]} ${styles["p-text"]}`}
             key={`link-${item}`}

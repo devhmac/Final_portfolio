@@ -45,7 +45,7 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className={styles["app__header-img"]}
       >
-        <img src="img/assets/me-nobg.png" alt="profile_bg" />
+        <img src="img/assets/me_square.png" alt="profile_bg" />
       </motion.div>
     </div>
   );
