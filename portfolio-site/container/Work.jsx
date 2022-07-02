@@ -23,7 +23,19 @@ const Work = () => {
     });
   }, []);
 
-  const handleWorkFilter = (item) => {};
+  const handleWorkFilter = (item) => {
+    setActiveFilter(item);
+    setAnimateCard([{ y: 100, opacity: 0 }]);
+
+    setTimeout(() => {
+      setAnimateCard([{ y: 0, opacity: 1 }]);
+      if (item === "All") {
+        setFilterWork(works);
+      } else {
+        setFilterWork(works.filter((work) => work.tags.includes(item)));
+      }
+    }, 500);
+  };
 
   return (
     <>
@@ -34,7 +46,7 @@ const Work = () => {
         {["Full Stack", "Front End", "React", "All"].map((item, index) => (
           <div
             key={index}
-            onClick={handleWorkFilter(item)}
+            onClick={() => handleWorkFilter(item)}
             className={`${styles["app__work-filter-item"]} ${
               styles["app__flex"]
             } ${styles["p-text"]} ${
@@ -70,23 +82,27 @@ const Work = () => {
                 }}
                 className={`${styles["app__work-hover"]} ${styles["app__flex"]}`}
               >
-                <Link
-                  href={work.projectLink}
-                  title="To Project Site"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
-                    transition={{ duration: 0.25 }}
-                    className={styles["app__flex"]}
+                {/* If not hosted, wont display proj link */}
+                {work.projectLink && (
+                  <Link
+                    href={work.projectLink}
+                    title="To Project Site"
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    <AiFillEye />
-                  </motion.div>
-                </Link>
+                    <motion.div
+                      whileInView={{ scale: [0, 1] }}
+                      whileHover={{ scale: [1, 0.9] }}
+                      transition={{ duration: 0.25 }}
+                      className={styles["app__flex"]}
+                    >
+                      <AiFillEye />
+                    </motion.div>
+                  </Link>
+                )}
+
                 <Link
-                  href={work.projectLink}
+                  href={work.codeLink}
                   title="To Github"
                   target="_blank"
                   rel="noreferrer"
