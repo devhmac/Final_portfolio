@@ -11,20 +11,20 @@ const SocialMedia = () => {
   return (
     <div className={styles.app__social}>
       <div>
-        <Link title="To Linkedin" href="https://www.linkedin.com/in/devhmac/">
+        <a title="To Linkedin" href="https://www.linkedin.com/in/devhmac/">
           <FaLinkedin />
-        </Link>
+        </a>
       </div>
 
       <div>
-        <Link title="To Github" href="https://github.com/devhmac">
+        <a title="To Github" href="https://github.com/devhmac">
           <FaGithub />
-        </Link>
+        </a>
       </div>
       <div>
-        <Link title="To Medium" href="https://medium.com/@devhmac">
+        <a title="To Medium" href="https://medium.com/@devhmac">
           <FaMedium />
-        </Link>
+        </a>
       </div>
     </div>
   );
