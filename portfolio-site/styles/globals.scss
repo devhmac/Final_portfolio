@@ -11,6 +11,26 @@
   --brown-color: #46364a;
   --white-color: #ffffff;
   font-family: var(--font-base);
+
+  background: hsla(213, 44%, 95%, 1);
+
+  background: linear-gradient(
+    225deg,
+    hsla(213, 44%, 95%, 1) 0%,
+    hsla(26, 100%, 97%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    225deg,
+    hsla(213, 44%, 95%, 1) 0%,
+    hsla(26, 100%, 97%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    225deg,
+    hsla(213, 44%, 95%, 1) 0%,
+    hsla(26, 100%, 97%, 1) 100%
+  );
 }
 
 * {
