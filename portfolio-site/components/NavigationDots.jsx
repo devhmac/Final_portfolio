@@ -4,7 +4,7 @@ import Link from "next/link";
 const NavigationDots = ({ active }) => {
   return (
     <div className={styles["app__navigation"]}>
-      {["home", "about", "work", "skills", "contact"].map((item, index) => (
+      {["home", "about", "work", "skills"].map((item, index) => (
         <a
           href={`#${item}`}
           key={item + index}
