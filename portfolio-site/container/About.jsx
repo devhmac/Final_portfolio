@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { urlFor, client } from "../client";
 import { AppWrap } from "../components/AppWrap";
+import SkillsRow from "../components/SkillsRow";
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -48,6 +49,7 @@ const About = () => {
           </motion.div>
         ))}
       </div>
+      <SkillsRow />
     </>
   );
 };
