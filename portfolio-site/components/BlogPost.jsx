@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "../styles/Work.module.scss";
 
 const BlogPost = ({ post }) => {
   const { slug, frontmatter } = post;
@@ -7,14 +8,18 @@ const BlogPost = ({ post }) => {
     frontmatter;
 
   return (
-    <article key={title}>
-      <img src={bannerImage} alt="" />
-      <Link href={`/articles/${slug}`}>
-        <h1>{title}</h1>
-      </Link>
-      <p>{excerpt}</p>
-      <h3>{author}</h3>
-      <h3>{date}</h3>
+    <article key={title} className={styles["app__work-item"]}>
+      <div className={`${styles["app__work-img"]} ${styles["app__flex"]}`}>
+        <img src={bannerImage} alt="" />
+      </div>
+      <div className={`${styles["app__work-content"]} ${styles["app__flex"]}`}>
+        <Link href={`/articles/${slug}`}>
+          <h1 className={`${styles["bold-text"]} ${styles["title-link"]}`}>
+            {title}
+          </h1>
+        </Link>
+        <p className={styles["p-text"]}>{excerpt}</p>
+      </div>
     </article>
   );
 };
