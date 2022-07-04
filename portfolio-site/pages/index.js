@@ -1,3 +1,5 @@
+import fs from 'fs';
+import matter from "gray-matter"
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
@@ -7,6 +9,7 @@ import { About, Header, Work, Blog } from '../container/containerIndex'
 
 
 export default function Home({ posts }) {
+  console.log(posts)
   return (
     <div>
       <Head>
@@ -21,15 +24,29 @@ export default function Home({ posts }) {
         <Work />
         {/* <Blog /> */}
 
-
-
-
       </div>
     </div>
   )
 }
 
-export async funciton getStaticProps(){
+export async function getStaticProps() {
 
-  return { props: { posts: 'the posts' } }
+  //gets from directory
+  const files = fs.readdirSync('content/articles')
+
+  //get slug & frontmatter
+
+  const posts = files.map(filename => {
+
+    //creating slug
+    const slug = filename.replace('.md', '')
+    //frontmatter
+    const markdownWithMeta = fs.readFileSync(`content/articles/${filename}`, 'utf-8')
+    const { data: frontmatter } = matter(markdownWithMeta)
+
+    return { slug, frontmatter }
+  })
+
+
+  return { props: { posts, } }
 }
