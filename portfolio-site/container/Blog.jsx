@@ -10,7 +10,7 @@ import styles from "../styles/Work.module.scss";
 const Blog = ({ posts }) => {
   return (
     <>
-      <div className={styles["app__container"]}>
+      <div className={`${styles["app__wrapper"]} ${styles["app__flex"]}`}>
         {/* one above might be the replacement wrapper */}
         <h2 className={styles["head-text"]}>
           Articles & <span>Case Studies</span>
