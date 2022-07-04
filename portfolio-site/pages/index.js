@@ -5,6 +5,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import Navbar from '../components/Navbar'
 
+import { sortByDate } from '../helperFunctions/'
+
 import { About, Header, Work, Blog } from '../container/containerIndex'
 
 
@@ -51,7 +53,7 @@ export async function getStaticProps() {
 
 
   return {
-    props: { posts, },
+    props: { posts: posts.sort(sortByDate) },
 
   }
 }
