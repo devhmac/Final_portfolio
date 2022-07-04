@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import Navbar from '../components/Navbar'
 
-import { About, Header, Work } from '../container/containerIndex'
+import { About, Header, Work, Blog } from '../container/containerIndex'
 
 
 export default function Home() {
@@ -19,6 +19,8 @@ export default function Home() {
         <Header />
         <About />
         <Work />
+        <Blog />
+
 
 
 
