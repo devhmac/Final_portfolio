@@ -8,6 +8,7 @@ const BlogPost = ({ post }) => {
 
   return (
     <article key={title}>
+      <img src={bannerImage} alt="" />
       <Link href={`/articles/${slug}`}>
         <h1>{title}</h1>
       </Link>
