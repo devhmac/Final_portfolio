@@ -19,7 +19,7 @@ const About = () => {
   return (
     <>
       <h2 className={styles["head-text"]}>
-        More about <span>Me</span>
+        About <span>Me</span>
       </h2>
 
       {/* Maps through skills in abouts variable above */}
