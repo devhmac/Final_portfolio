@@ -28,30 +28,30 @@ export default function Blog({ posts }) {
   );
 }
 
-//Generating the Static Props for the Blog Page
-export async function getStaticProps() {
-  // // get list of files from the posts folder
-  // const files = fs.readdirSync("../content/articles");
+// //Generating the Static Props for the Blog Page
+// export async function getStaticProps() {
+//   // // get list of files from the posts folder
+//   // const files = fs.readdirSync("../content/articles");
 
-  // // get frontmatter & slug from each post
-  // const posts = files.map((fileName) => {
-  //   const slug = fileName.replace(".md", "");
-  //   const readFile = fs.readFileSync(
-  //     `../content/articles/${fileName}`,
-  //     "utf-8"
-  //   );
-  //   const { data: frontmatter } = matter(readFile);
+//   // // get frontmatter & slug from each post
+//   // const posts = files.map((fileName) => {
+//   //   const slug = fileName.replace(".md", "");
+//   //   const readFile = fs.readFileSync(
+//   //     `../content/articles/${fileName}`,
+//   //     "utf-8"
+//   //   );
+//   //   const { data: frontmatter } = matter(readFile);
 
-  //   return {
-  //     slug,
-  //     frontmatter,
-  //   };
-  // });
+//   //   return {
+//   //     slug,
+//   //     frontmatter,
+//   //   };
+//   // });
 
-  // Return the pages static props
-  return {
-    props: {
-      posts: ["hello"],
-    },
-  };
-}
+//   // Return the pages static props
+//   return {
+//     props: {
+//       posts: ["hello"],
+//     },
+//   };
+// }
