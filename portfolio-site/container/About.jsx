@@ -25,7 +25,7 @@ const About = () => {
       {/* Maps through skills in abouts variable above */}
 
       <p className={`${styles["p-text"]} ${styles["head-body"]} `}>
-        A committed public service leader, and tech enthusiast. Passionate about
+        A committed public service leader and tech enthusiast. Passionate about
         pursuing customer experience and service delivery innovation through
         digital transformation, data-driven process development, and a
         relentless customer focus.
