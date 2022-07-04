@@ -25,10 +25,14 @@ const About = () => {
       {/* Maps through skills in abouts variable above */}
 
       <p className={`${styles["p-text"]} ${styles["head-body"]} `}>
-        Excited by the Intersection of customer need and technology solutions.
-        My passion for software development, customer relationship expertise,
-        and Degree in Psychology, give me a unique vision when perfecting
-        service delivery processes and systems.
+        A committed public service leader, and tech enthusiast. Passionate about
+        pursuing customer experience and service delivery innovation through
+        digital transformation, data-driven process development, and a
+        relentless customer focus.
+        <br />
+        <br />
+        Intersecting leadership, a degree in psychology, and technical skills,
+        to provide unique insights and solutions.
       </p>
       <div className={styles.app__profiles}>
         {abouts.map((about, index) => (
