@@ -26,7 +26,7 @@ const Navbar = () => {
           >
             <div />
 
-            <Link href={`#${item}`}>{item}</Link>
+            <Link href={`/#${item}`}>{item}</Link>
           </li>
         ))}
       </ul>
@@ -45,7 +45,7 @@ const Navbar = () => {
             <ul>
               {["about", "work", "articles & Case studies"].map((item) => (
                 <li key={item}>
-                  <a href={`#${item}`} onClick={handleOnClick}>
+                  <a href={`/#${item}`} onClick={handleOnClick}>
                     {item}
                   </a>
                 </li>
