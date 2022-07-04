@@ -128,7 +128,7 @@ const Work = () => {
               </p>
               <Link href={work.codeLink}>
                 <a className={`${styles["p-text"]} ${styles["see-more-link"]}`}>
-                  Read More
+                  See More
                 </a>
               </Link>
               <div
