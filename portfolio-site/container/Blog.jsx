@@ -5,15 +5,8 @@ import Link from "next/link";
 import BlogPost from "../components/BlogPost";
 import { AppWrap } from "../components/AppWrap";
 
-const Blog = ({ posts }) => {
-  return (
-    <div id="articles%20&%20case%20studies">
-      Blog
-      {posts.map((post, index) => {
-        return <BlogPost key={index} post={post} />;
-      })}
-    </div>
-  );
+const Blog = () => {
+  return <div>Blog</div>;
 };
 
 // export default AppWrap(Blog, "articles & case studies");
