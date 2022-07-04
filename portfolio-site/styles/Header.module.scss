@@ -14,7 +14,20 @@
     font-size: 1.75rem;
   }
 }
+.bold-text {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--black-color);
+  text-align: left;
 
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+  }
+}
 #home {
   position: relative;
   // make this a gradiant
@@ -140,4 +153,36 @@
 
 .app .head-text {
   font-weight: 400;
+}
+.scroll-indicator-bottom {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+
+  font-size: 2rem;
+  font-weight: 400;
+  svg {
+    margin-top: 10px;
+    margin-left: 2rem;
+  }
+  @media screen and (min-width: 1001px) {
+    display: none;
+  }
+}
+.scroll-indicator-top {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+
+  font-size: 2rem;
+  font-weight: 400;
+  svg {
+    margin-top: 10px;
+    margin-left: 2rem;
+  }
+  @media screen and (max-width: 1001px) {
+    display: none;
+  }
 }
