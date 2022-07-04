@@ -10,15 +10,15 @@ export default function PostPage({ frontmatter: { title, date, bannerImage }, sl
     <>
       <div className={styles['blog-container']}>
         <Link href='/#articles%20&%20Case%20studies'>
-          <a>Go Back</a>
+          <a className={styles['back']}>&#8249;</a>
         </Link>
-        <img src={bannerImage} />
-        <div>
-          <h1>{title}</h1>
-        </div>
-        <div> Posted on {date}</div>
-        <div className={styles['post-body']}>
-          <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+        <img className={styles['post-image']} src={bannerImage} />
+        <div className={`${styles.card} ${styles['card-page']}`}>
+          <h1 className={styles['post-title']}>{title}</h1>
+          <div className={styles['post-date']}> Posted on {date}</div>
+          <div className={styles['post-body']}>
+            <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+          </div>
         </div>
       </div>
     </>
