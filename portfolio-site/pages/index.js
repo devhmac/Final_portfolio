@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar'
 import { About, Header, Work, Blog } from '../container/containerIndex'
 
 
-export default function Home() {
+export default function Home({ posts }) {
   return (
     <div>
       <Head>
@@ -19,7 +19,7 @@ export default function Home() {
         <Header />
         <About />
         <Work />
-        <Blog />
+        {/* <Blog /> */}
 
 
 
@@ -27,4 +27,9 @@ export default function Home() {
       </div>
     </div>
   )
+}
+
+export async funciton getStaticProps(){
+
+  return { props: { posts: 'the posts' } }
 }
