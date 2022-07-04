@@ -7,6 +7,10 @@
     margin-left: 10%;
     margin-right: 10%;
   }
+  @media screen and (min-width: 1000px) {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 }
 
 .card {
@@ -17,6 +21,8 @@
 
 .card-page {
   padding: 15px 30px;
+  text-align: center;
+  overflow: hidden;
 }
 
 .post-title {

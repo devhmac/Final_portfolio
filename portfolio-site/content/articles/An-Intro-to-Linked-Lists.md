@@ -2,14 +2,8 @@
 title: "An Intro to Linked Lists"
 date: "March 1, 2021"
 excerpt: " A quick intro to working with Linked Lists Data Structures, for learners by a learner."
-cover_image: https://miro.medium.com/max/1134/1*JydPaHc6VTy6jwoBwP7_zg.png
+bannerImage: https://miro.medium.com/max/1134/1*JydPaHc6VTy6jwoBwP7_zg.png
 ---
-
-# An Intro to Linked Lists
-
-![](https://miro.medium.com/max/1134/1*JydPaHc6VTy6jwoBwP7_zg.png)
-
-Linked list src: [educative.io](https://www.educative.io/edpresso/what-is-a-linked-list)
 
 As I progress through my Full Stack education, data structures have always loomed as a large, overwhelming topic to tackle. So here I am, learning in public, putting my findings down on paper. This is a quick intro to working with Linked Lists, for learners by a learner.
 
@@ -24,31 +18,27 @@ It is a linear, dynamic, data structure made up of nodes. In a singly linked lis
 
 **_Pretty wordy… Still kind of feels like we’re using a word in its own definition huh?_** Let’s break it down a bit.
 
-![](https://miro.medium.com/max/1400/1*XPu_eMJVmbO3GAC1acszYA.png)
+<img src="https://miro.medium.com/max/1400/1*XPu_eMJVmbO3GAC1acszYA.png" width=100%/>
 
-Linked list src: [educative.io](https://www.educative.io/edpresso/what-is-a-linked-list)
-
-**Linear**
+## Linear
 
 This becomes more clear when compared to a tree (A non-linear Data structure), where a parent node can have multiple children. Each Element in a singularly linked list only has reference to the single next element.
 
-![](https://miro.medium.com/max/840/0*0UkxxaeQfZBOvf8u.png)
+<img src="https://miro.medium.com/max/840/0*0UkxxaeQfZBOvf8u.png" width="100%"/>
 
-Tree Data structure for non-linear reference
+_Tree Data structure for non-linear reference_
 
-**Dynamic**
+## Dynamic
 
 You might be thinking, why do I need linked lists, I already have arrays. However arrays are stored in memory as a fixed chunk. Imagine a box, which is then divided into sections of equal size, each section is given an index value.
 
 ![](https://miro.medium.com/max/564/1*3hE_7ceaE2yEyKmdZNkslw.png)
-
-Array example
+_Array example_
 
 A linked list can be visualized as many separate boxes, each box is linked to the next via a _pointer_. A linked list can dynamically grow and shrink based on your data & needs, making it much more flexible. As you add boxes, memory is allocated to store the new nodes value and pointer.
 
 ![](https://miro.medium.com/max/324/1*ZUrUDNoGLGFnowH6rTWxOg.png)
-
-A linked list node
+_A linked list node_
 
 **Each Linked List** has a **Head & Tail,** pretty self explanatory.
 
@@ -61,22 +51,20 @@ Like most data structures in JS, we will be utilizing classes. In this case a cl
 
 # The Node Class
 
-![](https://miro.medium.com/max/1400/1*oARvGrbaKRN1pULowyM_7A.png)
+<img src="https://miro.medium.com/max/1400/1*oARvGrbaKRN1pULowyM_7A.png" width="100%"/>
 
-Node class
+_Node class_
 
 The Node class has two properties: Data & Next.
 
 - **Data:** the data being stored, generally any type.
 - **Next:** a reference to the next node in line. It defaults to null to indicate it is the tail if its next does not reference another node.
 
-#
+# The List Class
 
-The List Class
+<img src="https://miro.medium.com/max/1280/1*FSwgr2JBscB6JBiXrfoBlg.png" width="100%"/>
 
-![](https://miro.medium.com/max/1280/1*FSwgr2JBscB6JBiXrfoBlg.png)
-
-List class
+_List class_
 
 The list its self generally has two properties
 
@@ -91,9 +79,9 @@ There are plenty of ways one might wish to manipulate linked lists. We’ll go o
 
 # **Adding a node to the start of your list**
 
-![](https://miro.medium.com/max/1400/1*jQHkQ1XyiP9-vfM6r45r7w.png)
+<img src="https://miro.medium.com/max/1400/1*jQHkQ1XyiP9-vfM6r45r7w.png" width="100%"/>
 
-insertFirst Method
+_insertFirst Method_
 
 This snippet assumes your list is _not_ empty. It takes assigns your new node as LinkedList’s current node. The added Nodes **_NEXT_** then references the head node prior to the insertion, effectively bumping it down the line. Then increment the size counter!
 
@@ -103,9 +91,9 @@ If you’re adding the first node to an empty list, the Node’s **_NEXT_** will
 
 This one gets a little more complex, and we have to account for our first edge case, _if the list is currently empty._
 
-![](https://miro.medium.com/max/1400/1*gIMRqlO2WCrvUieddPMaUA.png)
+<img src="https://miro.medium.com/max/1400/1*gIMRqlO2WCrvUieddPMaUA.png" width="100%"/>
 
-insertLast method
+_insertLast method_
 
 To add a node to the end of our linked list we need to traverse to the end of the list and change the tail node’s **_NEXT_** reference to the new node. Loop through your Nodes until current.next === null, then set that **_NEXT_** property to be your new node.
 
@@ -115,9 +103,9 @@ When our linked list is initialized it is empty, and its head property is set to
 
 Now for a something a little more involved.
 
-![](https://miro.medium.com/max/1400/1*_YVbrvAimoJ4FGMx0Yqxaw.png)
+<img src="https://miro.medium.com/max/1400/1*_YVbrvAimoJ4FGMx0Yqxaw.png" width="100%"/>
 
-insertAtIndex method
+_insertAtIndex method_
 
 As you can see, a lot more to account for on this one. Let’s start with our two edge case conditionals at the top.
 
@@ -135,9 +123,9 @@ Now on to the meat of our function.
 
 Pretty similar to insertAtIndex, but this time we want to essentially pluck out the node at the specified index.
 
-![](https://miro.medium.com/max/1400/1*tgvsx4zAngAogPOwNt892Q.png)
+<img src="https://miro.medium.com/max/1400/1*tgvsx4zAngAogPOwNt892Q.png" width="100%"/>
 
-removeAtIndex
+_removeAtIndex_
 
 To do this, we set the **previous** nodes **_NEXT_** reference to the targets nodes **_NEXT_** reference. Effectively removing the node at the target index from the list.
 
@@ -151,7 +139,7 @@ Set the **previous** nodes **_NEXT_** to reference the **current** nodes **_NEXT
 
 The last method we’re going to try today is printing out the data from each individual node in a linked list. This is a little less complex than the last two.
 
-![](https://miro.medium.com/max/1400/1*TGjMTAhbWkYRIgEHav64sw.png)
+<img src="https://miro.medium.com/max/1400/1*TGjMTAhbWkYRIgEHav64sw.png" width=100%/>
 
 This method is going to loop through our Linked list from the head to the tail, and console.log each node’s data property.
 
@@ -162,15 +150,17 @@ Remember that the tails **_NEXT_** property points to null, so once **current** 
 
 **Lets see the fruit of all our labor logged onto a nice code snipped below**
 
-const list = **new** LinkedList;list.insertFirst(10);  
-list.insertFirst(20);  
-list.insertAtIndex(1000, 1);  
-list.insertAtIndex(40, 2);  
-list.removeAtIndex(3);  
-list.insertLast('hey');list.printListData();// 20  
-// 1000  
-// 40  
+```js
+const list = **new** LinkedList;list.insertFirst(10);
+list.insertFirst(20);
+list.insertAtIndex(1000, 1);
+list.insertAtIndex(40, 2);
+list.removeAtIndex(3);
+list.insertLast('hey');list.printListData();// 20
+// 1000
+// 40
 // hey
+```
 
 Each time we call insertFirst sets the new node to the head, meaning the last previous node gets bumped. In this case the node with data: 10 was bumped down the the index 3, and then removed by our removeAtIndex(3).
 

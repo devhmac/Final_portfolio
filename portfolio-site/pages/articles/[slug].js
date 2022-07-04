@@ -9,11 +9,8 @@ export default function PostPage({ frontmatter: { title, date, bannerImage }, sl
   return (
     <>
       <div className={styles['blog-container']}>
-        <Link href='/#articles%20&%20Case%20studies'>
-          <a className={styles['back']}>&#8249;</a>
-        </Link>
-        <img className={styles['post-image']} src={bannerImage} />
         <div className={`${styles.card} ${styles['card-page']}`}>
+          <img className={styles['post-image']} src={bannerImage} />
           <h1 className={styles['post-title']}>{title}</h1>
           <div className={styles['post-date']}> Posted on {date}</div>
           <div className={styles['post-body']}>
