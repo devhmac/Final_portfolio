@@ -159,6 +159,8 @@
 .scroll-indicator-bottom {
   width: 100%;
   margin-top: 2rem;
+  color: var(--gray-color);
+
   display: flex;
   justify-content: center;
 
@@ -173,6 +175,8 @@
   }
 }
 .scroll-indicator-top {
+  color: var(--gray-color);
+
   width: 100%;
   margin-top: 1rem;
   display: flex;

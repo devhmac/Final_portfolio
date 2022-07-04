@@ -3,7 +3,7 @@ import styles from "../styles/SkillsRow.module.scss";
 const SkillsRow = () => {
   return (
     <>
-      <h2>Skills and Technology</h2>
+      <h2 className={styles["sub-head"]}>Skills and Technology</h2>
       <p className={`${styles["p-text"]} ${styles["studying"]}`}>
         Currently Studying: Google Data Analytics Professional Certificate
       </p>

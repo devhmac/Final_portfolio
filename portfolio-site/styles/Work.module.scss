@@ -22,6 +22,20 @@
     font-size: 2rem;
   }
 }
+.bold-text {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--black-color);
+  text-align: left;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+  }
+}
 
 .p-text {
   font-size: 0.8rem;
@@ -50,12 +64,14 @@
   margin: 4rem 0 2rem;
 
   .app__work-filter-item {
+    border: 1px solid rgb(201, 201, 201);
+
     padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     background-color: #fff;
-    box-shadow: -10px -10px 30px #fff, 10px 10px 30px #aeaec040;
+
     color: #000;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 0.5rem;
@@ -82,15 +98,16 @@
   align-items: center;
 
   .app__work-item {
-    width: 220px;
+    width: 210px;
     flex-direction: column;
     padding: 0.4rem;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     background-color: #ffffff;
     color: #000;
     margin: 0.5rem;
     //cursor: pointer;
     transition: all 0.3s ease;
+    border: 1px solid rgb(201, 201, 201);
 
     &:hover {
       box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
@@ -114,7 +131,7 @@
   img {
     width: 100%;
     height: 100%;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     object-fit: cover;
   }
   @media screen and (min-width: 2000px) {
@@ -132,7 +149,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   opacity: 0;
   transition: all 0.3s ease;
   div {
@@ -165,6 +182,9 @@
   h4 {
     margin-top: 0.75rem;
     line-height: 1.5;
+    @media screen and (min-width: 2000px) {
+      margin-top: 2.5rem;
+    }
   }
 
   .app__work-tag {

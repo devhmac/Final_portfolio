@@ -5,14 +5,28 @@
   align-items: flex-start;
 
   flex-wrap: wrap;
+
+  h3 {
+    @media screen and (min-width: 2000px) {
+      font-size: 1.8rem;
+    }
+  }
   div {
     margin: 1.5rem 2rem;
+  }
+}
+.sub-head {
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
   }
 }
 .studying {
   margin-left: 20px;
   margin-right: 20px;
   flex-wrap: contain;
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
 }
 .p-text {
   font-size: 0.8rem;
