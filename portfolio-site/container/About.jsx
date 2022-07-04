@@ -27,8 +27,8 @@ const About = () => {
       <p className={`${styles["p-text"]} ${styles["head-body"]} `}>
         A committed public service leader and tech enthusiast. Passionate about
         pursuing customer experience and service delivery innovation through
-        digital transformation, data-driven process development, and a
-        relentless customer focus.
+        digital transformation, design fundamentals, data-driven process
+        development, and a relentless customer focus.
         <br />
         <br />
         Intersecting leadership, a degree in psychology, and technical skills,
