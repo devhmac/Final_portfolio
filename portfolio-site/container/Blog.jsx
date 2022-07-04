@@ -12,7 +12,7 @@ const Blog = ({ posts }) => {
     <>
       <div className={`${styles["app__wrapper"]} ${styles["app__flex"]}`}>
         {/* one above might be the replacement wrapper */}
-        <h2 className={styles["head-text"]}>
+        <h2 className={`${styles["head-text"]} ${styles["articles-header"]}`}>
           Articles & <span>Case Studies</span>
         </h2>
         <div id="articles%20&%20case%20studies">

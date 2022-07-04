@@ -14,7 +14,7 @@ const BlogPost = ({ post }) => {
       </div>
       <div className={`${styles["app__work-content"]} ${styles["app__flex"]}`}>
         <Link href={`/articles/${slug}`}>
-          <h1 className={`${styles["bold-text"]} ${styles["read-link"]}`}>
+          <h1 className={`${styles["bold-text"]} ${styles["title-link"]}`}>
             {title}
           </h1>
         </Link>

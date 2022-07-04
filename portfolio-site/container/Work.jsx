@@ -126,6 +126,11 @@ const Work = () => {
               <p className={styles["p-text"]} style={{ marginTop: 10 }}>
                 {work.description}
               </p>
+              <Link href={work.codeLink}>
+                <a className={`${styles["p-text"]} ${styles["see-more-link"]}`}>
+                  Read More
+                </a>
+              </Link>
               <div
                 className={`${styles["app__work-tag"]} ${styles["app__flex"]}`}
               >
