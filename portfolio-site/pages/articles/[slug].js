@@ -1,16 +1,26 @@
 import fs from 'fs'
 import matter from 'gray-matter'
-import marked from 'marked'
+import { marked } from 'marked'
 import Link from 'next/link'
+import styles from '../../styles/Slug.module.scss'
 
 export default function PostPage({ frontmatter: { title, date, bannerImage }, slug, content }) {
+
   return (
     <>
-      <Link href='/#articles%20&%20Case%20studies'>
-        <a>Go Back</a>
-      </Link>
-      <img src={bannerImage} />
-      <div> WHy are we here</div>
+      <div className={styles['blog-container']}>
+        <Link href='/#articles%20&%20Case%20studies'>
+          <a>Go Back</a>
+        </Link>
+        <img src={bannerImage} />
+        <div>
+          <h1>{title}</h1>
+        </div>
+        <div> Posted on {date}</div>
+        <div className={styles['post-body']}>
+          <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+        </div>
+      </div>
     </>
   )
 }
@@ -22,8 +32,6 @@ export async function getStaticPaths() {
   const paths = files.map(filename => ({
     params: { slug: filename.replace('.md', '') }
   }))
-
-
 
   return {
     paths,
