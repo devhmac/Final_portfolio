@@ -8,8 +8,8 @@ import Navbar from '../components/Navbar'
 import { About, Header, Work, Blog } from '../container/containerIndex'
 
 
-export default function Home({ posts }) {
-  console.log(posts)
+export default function Home(props) {
+
   return (
     <div>
       <Head>
@@ -22,7 +22,9 @@ export default function Home({ posts }) {
         <Header />
         <About />
         <Work />
-        {/* <Blog /> */}
+        <Blog
+          posts={props.posts}
+        />
 
       </div>
     </div>
@@ -48,5 +50,8 @@ export async function getStaticProps() {
   })
 
 
-  return { props: { posts, } }
+  return {
+    props: { posts, },
+
+  }
 }

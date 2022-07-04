@@ -1,5 +1,5 @@
 ---
-title: "This is an example post"
+title: "This is an example post 3"
 excerpt: " This is just a quick excerpt"
 author: "Alex Merced"
 category: "example"
