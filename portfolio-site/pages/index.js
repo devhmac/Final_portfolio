@@ -16,7 +16,7 @@ export default function Home(props) {
     <div>
       <Head>
         <title>Devin MacGillivray</title>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta property="og:image" content="/assets/og-img" />
         <meta name="Portfolio" content="Devin MacGillivrays Portfolio" />
         <link rel="icon" href="/favicon.png" />
