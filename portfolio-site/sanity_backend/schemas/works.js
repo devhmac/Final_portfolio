@@ -45,15 +45,20 @@ export default {
         }
       ]
     },
+    {
+      name: 'order',
+      title: 'Order Number',
+      type: 'number',
+    }
 
   ],
-  // orderings: [
-  //   {
-  //     title: 'Release Date, New',
-  //     name: 'releaseDateDesc',
-  //     by: [
-  //       { field: 'releaseDate', direction: 'asc' }
-  //     ]
-  //   }]
+  orderings: [
+    {
+      title: 'Order Number',
+      name: 'order',
+      by: [
+        { field: 'order', direction: 'asc' }
+      ]
+    }]
 
 };
