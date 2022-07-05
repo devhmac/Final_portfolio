@@ -10,7 +10,7 @@ export default function PostPage({ frontmatter: { title, date, author, bannerIma
     <>
       <div className={styles['blog-container']}>
         <div className={`${styles.card} ${styles['card-page']}`}>
-          <img className={styles['post-image']} src={bannerImage} />
+          <img alt="post-image" className={styles['post-image']} src={bannerImage} />
           <h1 className={styles['post-title']}>{title}</h1>
           <p>{author}</p>
           <div className={`${styles['post-date']} ${styles['p-text']}`}> Posted on {date}</div>
