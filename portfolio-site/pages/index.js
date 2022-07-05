@@ -3,7 +3,7 @@ import matter from "gray-matter"
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
-import Navbar from '../components/Navbar'
+
 
 import { sortByDate } from '../helperFunctions/'
 
@@ -19,10 +19,10 @@ export default function Home(props) {
         <meta charset="utf-8" />
         <meta property="og:image" content="/assets/og-img" />
         <meta name="Portfolio" content="Devin MacGillivrays Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <div className={styles.app}>
-        {/* <Navbar /> */}
+
         <Header />
         <About />
         <Work />

@@ -13,7 +13,7 @@ const BlogPost = ({ post }) => {
         <img src={bannerImage} alt="" />
       </div>
       <div className={`${styles["app__work-content"]} ${styles["app__flex"]}`}>
-        <Link href={`/articles/${slug}/#article-top`}>
+        <Link href={`/articles/${slug}`}>
           <h1 className={`${styles["bold-text"]} ${styles["title-link"]}`}>
             {title}
           </h1>
