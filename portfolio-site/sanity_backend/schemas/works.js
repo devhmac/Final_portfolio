@@ -57,7 +57,7 @@ export default {
       title: 'Order Number',
       name: 'order',
       by: [
-        { field: 'order', direction: 'asc' }
+        { field: 'order', direction: 'desc' }
       ]
     }]
 
