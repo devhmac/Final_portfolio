@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
       <link rel="icon" href="/favicon.png" />
 
     </Head>
+    <GoogleAnalytics />
     <Navbar />
     <Component {...pageProps} />
     <Footer />

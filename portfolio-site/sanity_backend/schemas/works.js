@@ -47,13 +47,13 @@ export default {
     },
 
   ],
-  orderings: [
-    {
-      title: 'Release Date, New',
-      name: 'releaseDateDesc',
-      by: [
-        { field: 'releaseDate', direction: 'desc' }
-      ]
-    }]
+  // orderings: [
+  //   {
+  //     title: 'Release Date, New',
+  //     name: 'releaseDateDesc',
+  //     by: [
+  //       { field: 'releaseDate', direction: 'asc' }
+  //     ]
+  //   }]
 
 };
