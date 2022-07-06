@@ -17,7 +17,7 @@ export default function Home(props) {
       <Head>
         <title>Devin MacGillivray</title>
         <meta charSet="utf-8" />
-        <meta property="og:image" content="https://user-images.githubusercontent.com/52307383/177456554-9c3bd057-a9c5-4a15-8647-727af061fd88.png" />
+        <meta property="og:image" content="img/assets/og-img.png" />
         <meta name="Portfolio" content="Devin MacGillivrays Portfolio" />
 
       </Head>
