@@ -43,13 +43,15 @@ const Navbar = () => {
             <HiX onClick={() => setToggle(false)} />
             <motion.span onClick={handleOnClick} />
             <ul>
-              {["about", "work", "articles & case studies"].map((item) => (
-                <li key={item}>
-                  <a href={`/#${item}`} onClick={handleOnClick}>
-                    {item}
-                  </a>
-                </li>
-              ))}
+              {["home", "about", "work", "articles & case studies"].map(
+                (item) => (
+                  <li key={item}>
+                    <a href={`/#${item}`} onClick={handleOnClick}>
+                      {item}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </motion.div>
         )}

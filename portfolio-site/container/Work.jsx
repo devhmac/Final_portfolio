@@ -40,7 +40,7 @@ const Work = () => {
   return (
     <>
       <h2 className={styles["head-text"]}>
-        My <span>Work</span>
+        My <span>Projects</span>
       </h2>
       <div className={styles["app__work-filter"]}>
         {["Full Stack", "Front End", "React", "All"].map((item, index) => (

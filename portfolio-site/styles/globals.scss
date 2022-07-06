@@ -11,27 +11,26 @@
   --brown-color: #46364a;
   --white-color: #ffffff;
   font-family: var(--font-base);
-
   background: hsla(213, 44%, 95%, 1);
 
   background: linear-gradient(
     225deg,
     hsla(213, 44%, 95%, 1) 0%,
-    hsla(347, 100%, 98%, 1) 52%,
+    hsla(36, 100%, 98%, 1) 50%,
     hsla(213, 44%, 95%, 1) 100%
   );
 
   background: -moz-linear-gradient(
     225deg,
     hsla(213, 44%, 95%, 1) 0%,
-    hsla(347, 100%, 98%, 1) 52%,
+    hsla(36, 100%, 98%, 1) 50%,
     hsla(213, 44%, 95%, 1) 100%
   );
 
   background: -webkit-linear-gradient(
     225deg,
     hsla(213, 44%, 95%, 1) 0%,
-    hsla(347, 100%, 98%, 1) 52%,
+    hsla(36, 100%, 98%, 1) 50%,
     hsla(213, 44%, 95%, 1) 100%
   );
 }
