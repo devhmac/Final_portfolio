@@ -144,4 +144,4 @@ const Work = () => {
   );
 };
 
-export default AppWrap(Work, "development");
+export default AppWrap(Work, "projects");
