@@ -17,6 +17,7 @@
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 
 .card-page {
@@ -38,22 +39,16 @@
   font-size: 0.8rem;
   text-align: left;
   color: var(--black-color);
-  line-height: 1.5;
-
-  @media screen and (min-width: 2000px) {
-    font-size: 1.75rem;
-  }
-}
-
-.post-body {
   padding: 20px;
   margin: 20px 0;
   line-height: 2.3;
-}
-
-@media (max-width: 500px) {
-  .posts {
-    grid-template-columns: 1fr;
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
+  @media (max-width: 500px) {
+    .posts {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
