@@ -13,15 +13,26 @@ const Footer = () => {
       <a
         title="To Linkedin"
         target="_blank"
+        rel="noreferrer"
         href="https://www.linkedin.com/in/devhmac/"
       >
         <FaLinkedin />
         Linkedin
       </a>
-      <a title="To Github" target="_blank" href="https://github.com/devhmac">
+      <a
+        title="To Github"
+        target="_blank"
+        rel="noreferrer"
+        href="https://github.com/devhmac"
+      >
         <FaGithub /> Github
       </a>
-      <a title="To Medium" target="_blank" href="https://medium.com/@devhmac">
+      <a
+        title="To Medium"
+        target="_blank"
+        rel="noreferrer"
+        href="https://medium.com/@devhmac"
+      >
         <FaMedium /> Medium
       </a>
     </div>

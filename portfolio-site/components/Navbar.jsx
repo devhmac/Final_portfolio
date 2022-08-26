@@ -57,6 +57,7 @@ const Navbar = () => {
                 <a
                   title="To Linkedin"
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.linkedin.com/in/devhmac/"
                 >
                   Linkedin
@@ -67,6 +68,7 @@ const Navbar = () => {
                 <a
                   title="To Github"
                   target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/devhmac"
                 >
                   Github
@@ -75,6 +77,7 @@ const Navbar = () => {
                 <a
                   title="To Medium"
                   target="_blank"
+                  rel="noreferrer"
                   href="https://medium.com/@devhmac"
                 >
                   Medium
