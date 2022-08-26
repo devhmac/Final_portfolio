@@ -1,6 +1,6 @@
 import styles from "../styles/Navbar.module.scss";
 import Link from "next/link";
-
+import { SocialMedia } from "./componentsIndex";
 import { motion } from "framer-motion";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { useState } from "react";
@@ -52,6 +52,34 @@ const Navbar = () => {
                   </li>
                 )
               )}
+
+              <li>
+                <a
+                  title="To Linkedin"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/devhmac/"
+                >
+                  Linkedin
+                </a>{" "}
+                |{" "}
+                {/* </li>
+              <li> */}
+                <a
+                  title="To Github"
+                  target="_blank"
+                  href="https://github.com/devhmac"
+                >
+                  Github
+                </a>{" "}
+                |{" "}
+                <a
+                  title="To Medium"
+                  target="_blank"
+                  href="https://medium.com/@devhmac"
+                >
+                  Medium
+                </a>
+              </li>
             </ul>
           </motion.div>
         )}
