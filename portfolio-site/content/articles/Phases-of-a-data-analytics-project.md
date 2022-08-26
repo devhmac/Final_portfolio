@@ -16,6 +16,8 @@ Why is this important? Why not just jump straight into Rstudio or Pandas and get
 
 This system provides the methods and tools to map out your steps, ensuring you extract the most out of your data and create representative, applicable results.
 
+<br />
+
 ## Phase 1: Ask / Discovery
 
 If you don't understand your problem, how are you going to solve it?
@@ -24,11 +26,14 @@ Your first step is always to ask questions. Clarify what your stakeholders need 
 
 There are a few tools to use during this phase: 5 Why’s to determine root cause, SMART Questions to eliminate ambiguity, or a Gap analysis to understand what you’re lacking and potential contributing factors. At the end of the day, good questions will immediately provide direction. It will show both where you should go for your data, and what you need to do with it.
 
+<br />
+
 ## Phase 2: Prepare
 
 Once you have a clear direction, you need to dig into your functional requirements. What data do you need, and how are you going to collect it? Are you scraping Twitter for sentiment analysis? Or do you have a killer primary source database? You might want to think about quality concerns, or possible biases in your set. Your Ask phase should have helped develop a solid understanding of your potential limitations, now you can be strategic about filling them.
 
 Depending on the project, you’ll be addressing your data governance requirements and the data’s own lifecycle throughout the project. The second phase is all about data generation, collection, storage, and management. You’re setting the structure of your data foundation, and you can start building out from here.
+
 <br />
 
 ## Phase 3: Process
