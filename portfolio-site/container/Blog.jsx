@@ -24,7 +24,11 @@ const Blog = ({ posts }) => {
               className={styles["app__work-portfolio"]}
             >
               {posts.map((post, index) => {
-                return <BlogPost key={index} post={post} />;
+                return (
+                  post.frontmatter.display && (
+                    <BlogPost key={index} post={post} />
+                  )
+                );
               })}
             </motion.div>
           </div>
