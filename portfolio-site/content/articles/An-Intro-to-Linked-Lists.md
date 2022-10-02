@@ -19,13 +19,13 @@ It is a linear, dynamic, data structure made up of nodes. In a singly linked lis
 
 **_Pretty wordy… Still kind of feels like we’re using a word in its own definition huh?_** Let’s break it down a bit.
 
-<img src="https://miro.medium.com/max/1400/1*XPu_eMJVmbO3GAC1acszYA.png" width=100%/>
+<img src="https://miro.medium.com/max/1400/1*XPu_eMJVmbO3GAC1acszYA.png"/>
 
 ## Linear
 
 This becomes more clear when compared to a tree (A non-linear Data structure), where a parent node can have multiple children. Each Element in a singularly linked list only has reference to the single next element.
 
-<img src="https://miro.medium.com/max/840/0*0UkxxaeQfZBOvf8u.png" width="100%"/>
+<img src="https://miro.medium.com/max/840/0*0UkxxaeQfZBOvf8u.png"/>
 
 _Tree Data structure for non-linear reference_
 
@@ -52,7 +52,7 @@ Like most data structures in JS, we will be utilizing classes. In this case a cl
 
 # The Node Class
 
-<img src="https://miro.medium.com/max/1400/1*oARvGrbaKRN1pULowyM_7A.png" width="100%"/>
+<img src="https://miro.medium.com/max/1400/1*oARvGrbaKRN1pULowyM_7A.png"/>
 
 _Node class_
 

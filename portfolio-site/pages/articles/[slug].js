@@ -1,5 +1,6 @@
 import fs from 'fs'
 import matter from 'gray-matter'
+import Head from 'next/head'
 import { marked } from 'marked'
 import Link from 'next/link'
 import styles from '../../styles/Slug.module.scss'
@@ -8,6 +9,11 @@ export default function PostPage({ frontmatter: { title, date, author, bannerIma
 
   return (
     <>
+      <Head>
+
+
+      </Head>
+
       <div className={styles['blog-container']}>
         <div className={`${styles.card} ${styles['card-page']}`}>
           <img alt="post-image" className={styles['post-image']} src={bannerImage} />
