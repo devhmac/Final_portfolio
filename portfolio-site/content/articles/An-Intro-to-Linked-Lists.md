@@ -3,6 +3,8 @@ title: "An Intro to Linked Lists"
 date: "March 1, 2021"
 author: "Devin MacGillivray"
 excerpt: " A quick intro to working with Linked Lists Data Structures, for learners by a learner."
+# If to be linked via sanity, or dont want it displayed in articles & case studies section, set as false
+display: true
 bannerImage: https://miro.medium.com/max/1134/1*JydPaHc6VTy6jwoBwP7_zg.png
 ---
 
