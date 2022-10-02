@@ -63,7 +63,7 @@ The Node class has two properties: Data & Next.
 
 # The List Class
 
-<img src="https://miro.medium.com/max/1280/1*FSwgr2JBscB6JBiXrfoBlg.png" width="100%"/>
+<img src="https://miro.medium.com/max/1280/1*FSwgr2JBscB6JBiXrfoBlg.png"/>
 
 _List class_
 
@@ -80,7 +80,7 @@ There are plenty of ways one might wish to manipulate linked lists. We’ll go o
 
 # **Adding a node to the start of your list**
 
-<img src="https://miro.medium.com/max/1400/1*jQHkQ1XyiP9-vfM6r45r7w.png" width="100%"/>
+<img src="https://miro.medium.com/max/1400/1*jQHkQ1XyiP9-vfM6r45r7w.png" />
 
 _insertFirst Method_
 
@@ -92,7 +92,7 @@ If you’re adding the first node to an empty list, the Node’s **_NEXT_** will
 
 This one gets a little more complex, and we have to account for our first edge case, _if the list is currently empty._
 
-<img src="https://miro.medium.com/max/1400/1*gIMRqlO2WCrvUieddPMaUA.png" width="100%"/>
+<img src="https://miro.medium.com/max/1400/1*gIMRqlO2WCrvUieddPMaUA.png" />
 
 _insertLast method_
 
@@ -104,7 +104,7 @@ When our linked list is initialized it is empty, and its head property is set to
 
 Now for a something a little more involved.
 
-<img src="https://miro.medium.com/max/1400/1*_YVbrvAimoJ4FGMx0Yqxaw.png" width="100%"/>
+<img src="https://miro.medium.com/max/1400/1*_YVbrvAimoJ4FGMx0Yqxaw.png" />
 
 _insertAtIndex method_
 
@@ -124,7 +124,7 @@ Now on to the meat of our function.
 
 Pretty similar to insertAtIndex, but this time we want to essentially pluck out the node at the specified index.
 
-<img src="https://miro.medium.com/max/1400/1*tgvsx4zAngAogPOwNt892Q.png" width="100%"/>
+<img src="https://miro.medium.com/max/1400/1*tgvsx4zAngAogPOwNt892Q.png" />
 
 _removeAtIndex_
 
@@ -140,7 +140,7 @@ Set the **previous** nodes **_NEXT_** to reference the **current** nodes **_NEXT
 
 The last method we’re going to try today is printing out the data from each individual node in a linked list. This is a little less complex than the last two.
 
-<img src="https://miro.medium.com/max/1400/1*TGjMTAhbWkYRIgEHav64sw.png" width=100%/>
+<img src="https://miro.medium.com/max/1400/1*TGjMTAhbWkYRIgEHav64sw.png"/>
 
 This method is going to loop through our Linked list from the head to the tail, and console.log each node’s data property.
 
