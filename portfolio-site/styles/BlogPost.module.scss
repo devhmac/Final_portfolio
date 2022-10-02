@@ -35,6 +35,8 @@
 }
 
 .app__work-item {
+  cursor: pointer;
+
   width: relative;
   max-width: 250px;
   flex-direction: column;

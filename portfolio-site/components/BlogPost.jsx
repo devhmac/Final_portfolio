@@ -8,25 +8,27 @@ const BlogPost = ({ post }) => {
     frontmatter;
 
   return (
-    <article key={title} className={styles["app__work-item"]}>
-      <div className={`${styles["app__work-img"]} ${styles["app__flex"]}`}>
-        <img src={bannerImage} alt="" />
-      </div>
-      <div className={`${styles["app__work-content"]} ${styles["app__flex"]}`}>
-        <Link href={`/articles/${slug}`}>
+    <Link href={`/articles/${slug}`}>
+      <article key={title} className={styles["app__work-item"]}>
+        <div className={`${styles["app__work-img"]} ${styles["app__flex"]}`}>
+          <img src={bannerImage} alt="" />
+        </div>
+        <div
+          className={`${styles["app__work-content"]} ${styles["app__flex"]}`}
+        >
           <h1 className={`${styles["bold-text"]} ${styles["title-link"]}`}>
             {title}
           </h1>
-        </Link>
-        <p className={styles["p-text"]}>{excerpt}</p>
+          <p className={styles["p-text"]}>{excerpt}</p>
 
-        <Link href={`/articles/${slug}`}>
+          {/* <Link href={`/articles/${slug}`}> */}
           <a className={`${styles["p-text"]} ${styles["see-more-link"]}`}>
             Read More
           </a>
-        </Link>
-      </div>
-    </article>
+          {/* </Link> */}
+        </div>
+      </article>
+    </Link>
   );
 };
 
