@@ -5,12 +5,18 @@ import { marked } from 'marked'
 import Link from 'next/link'
 import styles from '../../styles/Slug.module.scss'
 
-export default function PostPage({ frontmatter: { title, date, author, bannerImage }, slug, content }) {
+export default function PostPage({ frontmatter: { title, date, author, bannerImage, excerpt }, slug, content }) {
 
   return (
     <>
       <Head>
-
+        <title>{`${title} | Devin MacGillivray`}</title>
+        <meta charSet="utf-8" />
+        <meta property="og:title" content={`${title} | Devin MacGillivray`} />
+        <meta property="og:description" content={excerpt} />
+        <meta property="og:image" content={bannerImage} />
+        <meta name="twitter:card" content={`${bannerImage}`} />
+        <meta name="Portfolio" content="Devin MacGillivrays Portfolio" />
 
       </Head>
 
