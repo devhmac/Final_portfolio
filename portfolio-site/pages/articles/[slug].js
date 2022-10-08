@@ -8,7 +8,7 @@ import MarkdownIt from 'markdown-it'
 import Link from 'next/link'
 import styles from '../../styles/Slug.module.scss'
 
-const md = new MarkdownIt()
+const md = new MarkdownIt('commonmark')
 
 export default function PostPage({ frontmatter: { title, date, author, bannerImage, excerpt }, slug, content }) {
   return (
