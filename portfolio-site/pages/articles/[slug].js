@@ -2,11 +2,15 @@ import fs from 'fs'
 import matter from 'gray-matter'
 import Head from 'next/head'
 import { marked } from 'marked'
+
+import MarkdownIt from 'markdown-it'
+
 import Link from 'next/link'
 import styles from '../../styles/Slug.module.scss'
 
-export default function PostPage({ frontmatter: { title, date, author, bannerImage, excerpt }, slug, content }) {
+const md = new MarkdownIt()
 
+export default function PostPage({ frontmatter: { title, date, author, bannerImage, excerpt }, slug, content }) {
   return (
     <>
       <Head>
@@ -27,7 +31,7 @@ export default function PostPage({ frontmatter: { title, date, author, bannerIma
           <p>{author}</p>
           <div className={`${styles['post-date']} ${styles['p-text']}`}> Posted on {date}</div>
           <div className={styles['post-body']}>
-            <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+            <div dangerouslySetInnerHTML={{ __html: md.render(content) }}></div>
           </div>
         </div>
       </div>
