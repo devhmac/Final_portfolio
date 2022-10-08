@@ -43,6 +43,7 @@ Depending on the project, you’ll be addressing your data governance requiremen
 So, you have your data, you’ve identified the KPIs you want to track, and have determined your variables. It's time to put on your gloves and get hands-on with your dataset. To drive change you need accurate results, and to get there you need **clean data.** Dirty data doesn’t just lead to inaccurate analytics. At best, you’ll deliver an embarrassing presentation when your data gets torn apart by the scrutiny of subject matter experts. At worst, a poor business decision is made on faulty data, wasting time and money. Here are a few common cleaning functions to prevent these uncomfortable possibilities;
 
 <br />
+
 <ul>
 <li> Remove duplicate data and handle outliers.</li>
 
