@@ -5,7 +5,7 @@ author: "Devin MacGillivray"
 excerpt: "An analysis of Chicagos Divvy bikeshare ridership from Sept 2021 to Aug 2022."
 # If to be linked via sanity, or dont want it displayed in articles & case studies section, set as false
 display: false
-bannerImage: https://user-images.githubusercontent.com/52307383/197652003-a9445a0b-2a53-4265-a53a-6bcc07b9dda5.png
+bannerImage: https://user-images.githubusercontent.com/52307383/197654399-f9ab5749-138f-4a8e-b7e8-c56a61aa4459.jpg
 ---
 
 # Divvy Bikeshare Ridership Analysis
