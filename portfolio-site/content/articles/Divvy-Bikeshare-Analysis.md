@@ -2,13 +2,15 @@
 title: "Divvy Bikeshare Analysis"
 date: "October 24, 2022"
 author: "Devin MacGillivray"
-excerpt: "An analysis of Chicagos Divvy bikeshare ridership."
+excerpt: "An analysis of Chicagos Divvy bikeshare ridership from Sept 2021 to Aug 2022."
 # If to be linked via sanity, or dont want it displayed in articles & case studies section, set as false
 display: false
 bannerImage: https://user-images.githubusercontent.com/52307383/197652003-a9445a0b-2a53-4265-a53a-6bcc07b9dda5.png
 ---
 
 # Divvy Bikeshare Ridership Analysis
+
+test
 
 This project utilized various technologies to clean, manipulate, transform, analyze and finally visualize a bike share ridership dataset.
 
@@ -20,8 +22,10 @@ This project utilized various technologies to clean, manipulate, transform, anal
 
 <div align="center"> 
   
-## [Tableau Dashboard linked here](https://public.tableau.com/app/profile/devmac/viz/ChicagoBikeShareAnalysis/BikeUsageDashboard) 
-  
+## [Tableau Dashboard linked here](https://public.tableau.com/app/profile/devmac/viz/ChicagoBikeShareAnalysis/BikeUsageDashboard)
+
+### [Code linked here](https://github.com/devhmac/Chicago_Bike_share_analysis/blob/main/chicago_bike_share_analysis.ipynb)
+
 </div>
 
 ## Business Case
@@ -162,5 +166,7 @@ Customer interviews would confirm or disprove our hypothesis that Member riders 
 - Run membership sale during peak use months where casual use is at its highest, where the largest largest quantity of non members are interacting with your product. This would give you the best chance at converting non-members due to the high service utilization.
 - Re-evaluate fee structure targeting casual use trends. For example, increasing cost on weekends, or implementing a pay-by-ride-length which could increase the perceived value of membership option, encouraging higher membership conversion.
 - Launch Social media marketing campaign leading up to peak months peak months, and again after (April and September/October) leaning on the benefits active transportation methods provide to the users and the environment. Encouraging a subset of casual users to utilize the service to commute to work VIA Divvy bike share. As the commuter use patterns highly correlates to membership holders.
+
+<br>
 
 There is more data we could draw insights from. Trip location data could give us insights on common trip locations for members versus non-members, enabling more specificity when targeting each user subset by perks or marketing campain. For example allowing for a station popularity based fee structure. I would like to explore these potential avenues in the future!
