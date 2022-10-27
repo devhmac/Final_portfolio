@@ -10,7 +10,6 @@ bannerImage: https://user-images.githubusercontent.com/52307383/197654399-f9ab57
 
 # Divvy Bikeshare Ridership Analysis
 
-test
 
 This project utilized various technologies to clean, manipulate, transform, analyze and finally visualize a bike share ridership dataset.
 
