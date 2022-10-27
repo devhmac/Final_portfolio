@@ -43,19 +43,21 @@ const Work = () => {
         My <span>Projects</span>
       </h2>
       <div className={styles["app__work-filter"]}>
-        {["Full Stack", "Front End", "React", "All"].map((item, index) => (
-          <div
-            key={index}
-            onClick={() => handleWorkFilter(item)}
-            className={`${styles["app__work-filter-item"]} ${
-              styles["app__flex"]
-            } ${styles["p-text"]} ${
-              activeFilter === item ? styles["item-active"] : ""
-            }`}
-          >
-            {item}
-          </div>
-        ))}
+        {["Data", "Full Stack", "Front End", "React", "All"].map(
+          (item, index) => (
+            <div
+              key={index}
+              onClick={() => handleWorkFilter(item)}
+              className={`${styles["app__work-filter-item"]} ${
+                styles["app__flex"]
+              } ${styles["p-text"]} ${
+                activeFilter === item ? styles["item-active"] : ""
+              }`}
+            >
+              {item}
+            </div>
+          )
+        )}
       </div>
 
       <motion.div
