@@ -4,9 +4,10 @@ const SkillsRow = () => {
   return (
     <>
       <h2 className={styles["sub-head"]}>Skills and Technology</h2>
-      <p className={`${styles["p-text"]} ${styles["studying"]}`}>
+      {/* Add studying here */}
+      {/* <p className={`${styles["p-text"]} ${styles["studying"]}`}>
         Currently Studying: Google Data Analytics Professional Certificate
-      </p>
+      </p> */}
 
       <div className={styles["skills-block"]}>
         <div>
@@ -14,8 +15,7 @@ const SkillsRow = () => {
           <ul className={styles["p-text"]}>
             <li>Javascript</li>
             <li>SQL</li>
-            <li>R</li>
-            <li>Ruby</li>
+            <li>Python</li>
           </ul>
         </div>
         <div>
