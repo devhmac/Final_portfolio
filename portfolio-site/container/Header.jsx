@@ -1,7 +1,6 @@
 import styles from "../styles/Header.module.scss";
 import { motion } from "framer-motion";
 import { AppWrap } from "../components/AppWrap";
-import { BsChevronDoubleDown } from "react-icons/bs";
 
 const scaleVariants = {
   whileInView: {
@@ -35,13 +34,16 @@ const Header = () => {
           <div className={`${styles["tag-cmp"]} ${styles.app__flex}`}>
             <p className={styles["p-text"]}>
               A People Leader with skills in Analytics <br />
-              and Full-Stack Development
+              and Full-Stack Development.
             </p>
           </div>
         </div>
         <div className={` ${styles["scroll-indicator-top"]}`}>
-          <span>More Below</span>
-          <BsChevronDoubleDown />
+          <p>
+            More about me, and my work
+            <span> below</span>
+          </p>
+          {/* <BsChevronDoubleDown /> */}
         </div>
       </motion.div>
 
@@ -53,8 +55,9 @@ const Header = () => {
         <img src="img/assets/me_square.png" alt="profile_bg" />
       </motion.div>
       <div className={` ${styles["scroll-indicator-bottom"]}`}>
-        <span>More Below</span>
-        <BsChevronDoubleDown />
+        <p>
+          More <span> Below</span>
+        </p>
       </div>
     </div>
   );

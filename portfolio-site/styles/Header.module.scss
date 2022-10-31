@@ -166,9 +166,8 @@
 
   font-size: 2rem;
   font-weight: 400;
-  svg {
-    margin-top: 10px;
-    margin-left: 1rem;
+  span {
+    color: var(--secondary-color);
   }
   @media screen and (min-width: 1001px) {
     display: none;
@@ -176,17 +175,17 @@
 }
 .scroll-indicator-top {
   color: var(--gray-color);
-
+  max-width: 335px;
   width: 100%;
   margin-top: 1rem;
+  padding-left: 4rem;
   display: flex;
   justify-content: flex-end;
 
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  svg {
-    margin-top: 10px;
-    margin-left: 1rem;
+  span {
+    color: var(--secondary-color);
   }
   @media screen and (max-width: 1001px) {
     display: none;
