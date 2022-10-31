@@ -12,6 +12,9 @@
   display: flex;
   flex-direction: row;
 }
+.app__container:first-of-type {
+  background-color: black;
+}
 
 .app__flex {
   display: flex;
