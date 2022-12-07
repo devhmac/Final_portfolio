@@ -111,9 +111,13 @@
   flex-wrap: wrap;
   justify-content: center;
   // align-items: center;
+  @media screen and (min-width: 1510px) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 
   .app__work-item {
-    width: 230px;
+    width: 250px;
     flex-direction: column;
     padding: 0.4rem;
     border-radius: 0.2rem;
