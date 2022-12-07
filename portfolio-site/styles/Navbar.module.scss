@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -66,7 +66,7 @@
 .app__navbar-links {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 
   list-style: none;
