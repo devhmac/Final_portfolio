@@ -81,6 +81,7 @@
 
   .app__work-filter-item {
     // border: 1px solid rgb(201, 201, 201);
+
     text-decoration: underline;
     padding: 0.5rem 0.5rem;
     border-radius: 0.2rem;
@@ -113,7 +114,8 @@
   // align-items: center;
 
   .app__work-item {
-    width: 230px;
+    width: 250px;
+    //flex: 1 0 21%;
     flex-direction: column;
     padding: 0.4rem;
     border-radius: 0.2rem;

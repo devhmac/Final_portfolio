@@ -13,7 +13,9 @@
   flex-direction: row;
 }
 .app__container:first-of-type {
-  background-color: black;
+  background-image: url(../public/img/assets/background-small.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .app__flex {
