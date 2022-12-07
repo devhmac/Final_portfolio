@@ -9,7 +9,7 @@ import {
 const Footer = () => {
   return (
     <div className={`${styles["app__footer"]} ${styles["footer-text"]}`}>
-      <h3>Find Me On:</h3>
+      {/* <h3>Find Me On:</h3> */}
       <a
         title="To Linkedin"
         target="_blank"
