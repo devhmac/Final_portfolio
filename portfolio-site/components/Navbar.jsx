@@ -29,6 +29,11 @@ const Navbar = () => {
             <Link href={`/#${item}`}>{item}</Link>
           </li>
         ))}
+        <li className={`${styles["app__flex"]} ${styles["p-text"]}`}>
+          <div />
+
+          <Link href="https://blog.devhmac.com/">Blog</Link>
+        </li>
       </ul>
 
       <div className={styles["app__navbar-menu"]}>
@@ -52,7 +57,9 @@ const Navbar = () => {
                   </li>
                 )
               )}
-
+              <li>
+                <a href="https://blog.devhmac.com/">Blog</a>
+              </li>
               <li>
                 <a
                   title="To Linkedin"
