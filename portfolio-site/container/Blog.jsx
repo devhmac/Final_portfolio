@@ -15,9 +15,15 @@ const Blog = ({ posts }) => {
         <SocialMedia />
         <div className={`${styles["app__wrapper"]} `}>
           {/* one above might be the replacement wrapper */}
-          <h2 className={`${styles["head-text"]} ${styles["articles-header"]}`}>
-            Articles & <span>Case Studies</span>
-          </h2>
+          <div className={` ${styles["articles-header"]}`}>
+            <h2 className={styles["head-text"]}>
+              Articles & <span>Case Studies</span>
+            </h2>
+            <p className={styles["sub-head"]}>
+              See more on my <a href="https://blog.devhmac.com/"> blog</a>
+            </p>
+          </div>
+
           <div id="articles%20&%20case%20studies">
             <motion.div
               transition={{ duration: 0.5, delayChildren: 0.5 }}
