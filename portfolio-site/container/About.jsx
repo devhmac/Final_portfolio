@@ -31,8 +31,8 @@ const About = () => {
         development, and a relentless customer focus.
         <br />
         <br />
-        Intersecting leadership, a degree in psychology, and technical skills,
-        to provide unique insights and solutions.
+        Intersecting a degree in psychology with technical skills, to provide
+        unique insights and solutions.
       </p>
       <div className={styles.app__profiles}>
         {abouts.map((about, index) => (
