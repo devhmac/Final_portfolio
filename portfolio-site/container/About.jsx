@@ -25,14 +25,15 @@ const About = () => {
       {/* Maps through skills in abouts variable above */}
 
       <p className={`${styles["p-text"]} ${styles["head-body"]} `}>
-        A committed public service leader and tech enthusiast. Passionate about
-        pursuing customer experience and service delivery innovation through
-        digital transformation, design fundamentals, data-driven process
-        development, and a relentless customer focus.
+        A committed tech enthusiast developing business intelligence solutions,
+        data architecture, and analytics to enable and enhance business
+        outcomes.
         <br />
         <br />
-        Intersecting a degree in psychology with technical skills, to provide
-        unique insights and solutions.
+        Thrilled by the Intersection of user needs and technology solutions. My
+        passion for software development, data analytics & engineering, and my
+        Degree in Psychology give me a unique vision when engineering and
+        enhancing business intelligence for end users and their goals.
       </p>
       <div className={styles.app__profiles}>
         {abouts.map((about, index) => (
