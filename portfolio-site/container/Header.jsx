@@ -40,7 +40,7 @@ const Header = () => {
         </div>
         <div className={` ${styles["scroll-indicator-top"]}`}>
           <p>
-            More about me, and my work
+            More about me
             <span> below</span>
           </p>
           {/* <BsChevronDoubleDown /> */}
