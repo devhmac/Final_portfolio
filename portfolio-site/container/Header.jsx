@@ -33,8 +33,8 @@ const Header = () => {
           </div>
           <div className={`${styles["tag-cmp"]} ${styles.app__flex}`}>
             <p className={styles["p-text"]}>
-              Data Engineer and Analyst <br />
-              with a love for Full-Stack Web.
+              Data Engineer with a love <br />
+              for Full-Stack Development.
             </p>
           </div>
         </div>
@@ -52,7 +52,7 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className={styles["app__header-img"]}
       >
-        <img src="img/assets/me_square.png" alt="profile_bg" />
+        <img src="img/assets/new_me.JPG" alt="profile_bg" />
       </motion.div>
       <div className={` ${styles["scroll-indicator-bottom"]}`}>
         <p>
