@@ -14,6 +14,7 @@ const SkillsRow = () => {
           <h3>Languages</h3>
           <ul className={styles["p-text"]}>
             <li>Javascript</li>
+            <li>Typescript</li>
             <li>SQL</li>
             <li>Python</li>
           </ul>
@@ -22,9 +23,9 @@ const SkillsRow = () => {
           <h3>Front End</h3>
           <ul className={styles["p-text"]}>
             <li>React</li>
-            <li>jQuery</li>
+            <li>NextJS</li>
             <li>HTML</li>
-            <li>CSS</li>
+            <li>CSS/SCSS</li>
           </ul>
         </div>
         <div>
@@ -32,22 +33,17 @@ const SkillsRow = () => {
           <ul className={styles["p-text"]}>
             <li>NodeJS</li>
             <li>ExpressJS</li>
-            <li>Ruby On Rails</li>
+            <li>REST API Development</li>
+            <li>PostGres, SQLServer & ERD Design</li>
           </ul>
         </div>
         <div>
-          <h3>Databases</h3>
+          <h3>Data & Cloud</h3>
           <ul className={styles["p-text"]}>
-            <li>PostgreSQL</li>
-            <li>ERD Design</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Data Analysis</h3>
-          <ul className={styles["p-text"]}>
-            <li>Data scraping & cleaning</li>
-            <li>Tableau</li>
-            <li>Google Data Studio</li>
+            <li>Databricks, Delta Lake & Unity Catalog</li>
+            <li>PySpark</li>
+            <li>Azure Data Factory & Orchestration</li>
+            <li>Azure Cloud Object Storage</li>
           </ul>
         </div>
       </div>
