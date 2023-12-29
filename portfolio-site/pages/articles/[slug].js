@@ -24,13 +24,13 @@ export default function PostPage({ frontmatter: { title, date, author, bannerIma
         <div className={`${styles.card} ${styles['card-page']}`}>
           <img alt="post-image" className={styles['post-image']} src={bannerImage} />
           <h1 className={styles['post-title']}>{title}</h1>
-          <p>{author}</p>
-          <div className={`${styles['post-date']} ${styles['p-text']}`}> Posted on {date}</div>
+          <p className={` ${styles['post-author']} `} > {author}</p>
+          <div className={`${styles['post-date']} ${styles['p-text']}`}> Posted on: {date}</div>
           <div className={styles['post-body']}>
             <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
           </div>
         </div>
-      </div>
+      </div >
     </>
   )
 }

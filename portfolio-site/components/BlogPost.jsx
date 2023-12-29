@@ -20,6 +20,7 @@ const BlogPost = ({ post }) => {
             {title}
           </h1>
           <p className={styles["p-text"]}>{excerpt}</p>
+          {/* <p className={`${styles["p-text"]} ${styles["post-date"]}`}>{date}</p> */}
 
           {/* <Link href={`/articles/${slug}`}> */}
           <a className={`${styles["p-text"]} ${styles["see-more-link"]}`}>
