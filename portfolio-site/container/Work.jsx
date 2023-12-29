@@ -120,25 +120,30 @@ const Work = () => {
                 </Link>
               </motion.div>
             </div>
-
-            <div
-              className={`${styles["app__work-content"]} ${styles["app__flex"]}`}
-            >
-              <h4 className={styles["bold-text"]}>{work.title}</h4>
-              <p className={styles["p-text"]} style={{ marginTop: 10 }}>
-                {work.description}
-              </p>
-              <Link href={work.codeLink}>
-                <a className={`${styles["p-text"]} ${styles["see-more-link"]}`}>
-                  See More
-                </a>
-              </Link>
-              <div
-                className={`${styles["app__work-tag"]} ${styles["app__flex"]}`}
-              >
-                <p className={styles["p-text"]}>{work.tags[0]}</p>
-              </div>
-            </div>
+            <Link href={work.codeLink}>
+              <article>
+                <div
+                  className={`${styles["app__work-content"]} ${styles["app__flex"]}`}
+                >
+                  <h4 className={styles["bold-text"]}>{work.title}</h4>
+                  <p className={styles["p-text"]} style={{ marginTop: 10 }}>
+                    {work.description}
+                  </p>
+                  {/* <Link href={work.codeLink}> */}
+                  <a
+                    className={`${styles["p-text"]} ${styles["see-more-link"]}`}
+                  >
+                    See More
+                  </a>
+                  {/* </Link> */}
+                  <div
+                    className={`${styles["app__work-tag"]} ${styles["app__flex"]}`}
+                  >
+                    <p className={styles["p-text"]}>{work.tags[0]}</p>
+                  </div>
+                </div>
+              </article>
+            </Link>
           </div>
         ))}
       </motion.div>
