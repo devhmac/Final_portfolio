@@ -94,7 +94,7 @@
   align-items: center;
   flex-wrap: wrap;
 
-  margin: 4rem 0 2rem;
+  margin: 1rem 0 2rem;
 
   .app__work-filter-item {
     // border: 1px solid rgb(201, 201, 201);
@@ -104,6 +104,8 @@
     // background-color: #fff;
     color: #000;
     font-weight: 400;
+    font-size: 0.95rem;
+    text-underline-offset: 2px;
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 0.5rem;
