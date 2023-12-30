@@ -19,7 +19,7 @@ const Navbar = () => {
         <Link href="/">Devin MacGillivray</Link>
       </div>
       <ul className={styles["app__navbar-links"]}>
-        {["about", "projects", "articles & case studies"].map((item) => (
+        {["about", "projects", "articles & posts"].map((item) => (
           <li
             className={`${styles["app__flex"]} ${styles["p-text"]}`}
             key={`link-${item}`}
@@ -48,15 +48,13 @@ const Navbar = () => {
             <HiX onClick={() => setToggle(false)} />
             <motion.span onClick={handleOnClick} />
             <ul>
-              {["home", "about", "projects", "articles & case studies"].map(
-                (item) => (
-                  <li key={item}>
-                    <a href={`/#${item}`} onClick={handleOnClick}>
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
+              {["home", "about", "projects", "articles & posts"].map((item) => (
+                <li key={item}>
+                  <a href={`/#${item}`} onClick={handleOnClick}>
+                    {item}
+                  </a>
+                </li>
+              ))}
               <li>
                 <a href="https://blog.devhmac.com/">Blog</a>
               </li>

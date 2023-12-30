@@ -17,14 +17,14 @@ const Blog = ({ posts }) => {
           {/* one above might be the replacement wrapper */}
           <div className={` ${styles["articles-header"]}`}>
             <h2 className={styles["head-text"]}>
-              Articles & <span>Case Studies</span>
+              Articles & <span>Posts</span>
             </h2>
             <p className={styles["sub-head"]}>
               See more on my <a href="https://blog.devhmac.com/"> blog</a>
             </p>
           </div>
 
-          <div id="articles%20&%20case%20studies">
+          <div id="articles%20&%20posts">
             <motion.div
               transition={{ duration: 0.5, delayChildren: 0.5 }}
               className={styles["app__work-portfolio"]}
@@ -39,7 +39,7 @@ const Blog = ({ posts }) => {
             </motion.div>
           </div>
         </div>
-        <NavigationDots active="articles & case studies" />
+        <NavigationDots active="articles & posts" />
       </div>
     </>
   );
