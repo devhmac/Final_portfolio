@@ -10,26 +10,26 @@ bannerImage: https://github.com/sendwithus/vic-startup-jobs/assets/52307383/e9ff
 
 # 2023…
 
-2023 Was a big year for me personally and technically. I crushed 3000+ pages of Sanderson fantasy novels, got to many speeding tickets, and built tech solutions at a larger scale than I have ever before.
+2023 Was a big year for me personally and technically. I crushed 3000+ pages of Sanderson fantasy novels, got two to many speeding tickets, and built tech solutions at a larger scale than I ever have before.
 
 <br>
-It was also a huge year for the tech industry at large. ChatGPT and generative AI took the scene by storm. Interest rate hikes stunted “cheap” investor capital and FAANG layoffs ensued en masse, leading to an onslaught of articles and YouTube influencers claiming the death of software engineering as a whole.
+It was also a huge year for the tech industry at large. ChatGPT and generative AI took the scene by storm. Interest rate hikes stunted “cheap” investor capital and FAANG layoffs ensued en masse. This lead to the onslaught of articles and YouTube influencers claiming the death of software engineering as a whole.
 <br>
 <br>
 
-Well we ain’t dead yet, and developing product and data solutions to enhance processes and outcomes is alive and thriving. This year brought on awesome projects, development, and experience, From leetcode, building out a Datalake on a modern data stack (Azure ADLS Gen2, Databricks, PySpark and Azure Data Factory) to dusting off the Full-stack cob**web**s, diving into the world of ChatGPT wrappers and web scraping NextJs server side components.
+Well we ain’t dead yet, and developing product and data solutions to enhance processes and results is alive as it always will be. This year brought on awesome projects, development, and experience, From leetcode, building out a modern cloud based Data lake(Azure ADLS Gen2, Databricks, PySpark and Azure Data Factory) to dusting off the Full-stack cob**web**s, diving into the world of ChatGPT wrappers and web scraping NextJs server side components.
 <br>
 <br>
 
 ## This year’s Technology Focus
 
-This year focused on a few main areas: Data Engineering, Reporting & Advanced Analytics, some light machine learning, Full-Stack Web Development. This is not a complete list of everything worked on over the year, its a pretty fun highlight of my favourite work.
+This year focused on a few main areas: Data Engineering, Dashboarding & Analytics, some light machine learning and Full-Stack Web Development. This is not a complete list of everything worked on over the year, but a fun highlight of my favourite works.
 <br>
 <br>
 Javascript will always have a special place in my heart, but we expanded our horizons this year. Picking up Typescript to enhance my full stack web arsenal. I certainly have more learning to go on the nuances, but the speed and confidence provided via typesafety and the type driven editor IntelliSense makes for an incredible developer experience.
 <br>
 <br>
-I grabbed python back off the bookshelf, and used it all year long to pipe and transform data, and build internal tooling to automate processeces. Building and hitting API endpoints to enable integration of data across numerous applications. I developed self serve data objects via PySpark, and orchestrated it all with Azure Data Factory. Even dabbled in a bit of machine learning via Scikit-Learn.
+I grabbed python back off the old bookshelf, and used it all year long to pipe and transform data. Developing internal tooling to automate processes or building and hitting API endpoints to enable integration of data across numerous applications. I developed self serve data objects via PySpark, and orchestrated it all with Azure Data Factory. Even dabbled in a bit of machine learning via Scikit-Learn.
 <br>
 <br>
 
@@ -47,7 +47,7 @@ I grabbed python back off the bookshelf, and used it all year long to pipe and t
 ### **Favorite or notable new frameworks and libraries**
 
 - **Databricks:** An incredible platform for developing a data ecosystem, and a true scalable compute powerhouse. Particularly in combination with spark.
-- **PySpark**: A fantastic python api for Apache Spark, enabling distributed and scalable data processing and computing.
+- **PySpark**: A fantastic python api for Apache Spark, enabling distributed big data processing and computing.
 - **Scikit-Learn:** Built predictive models for a few datasets with Linear \*\*\*\*Regressions and K Nearest Neighbour classifications.
 - **NextJs, Server Side Rendering:** Dabbling in some of the newest react community hype, I built out two different web apps leveraging different tools and technique, Server Side components being a very interesting highlight, effectively enabling a front end as a backend for more complex route development, improved SEO, and lighter client loads.
 - **Tanstack/React-Query:** With React themselves shunning the classic useEffect data fetching and state setting pattern, I experimented with a de-facto recommended solution — Tanstack query to fill this hole in the React ecosystem.
@@ -57,7 +57,7 @@ I grabbed python back off the bookshelf, and used it all year long to pipe and t
 
 # Projects
 
-For me 2023 started off very slow on the project front, mainly defined by getting my feet under my in a new role with a new stack. But they say the most important thing is to keep building, so I hopped back on the bandwagon later in the year and worked on some cool stuff in my own time. here are 3 quick project highlights for 2023.
+For me 2023 started off very slow on the personal project front, mainly due to getting my feet under my in a new role with a new stack. But they say the most important thing is to keep building, so I hopped back on the bandwagon later in the year and worked on some cool stuff in my own time. here are 3 quick project highlights for 2023.
 <br>
 <br>
 
@@ -65,7 +65,7 @@ For me 2023 started off very slow on the project front, mainly defined by gettin
 
 ![image](https://github.com/sendwithus/vic-startup-jobs/assets/52307383/071c7d1d-4ea3-4871-ab72-dea6e3adc87a)
 
-By far the largest project this year was building out a full scale cloud based modern data platform on a medallion architecture. Ingesting both structured and unstructured data from various sources like ERP systems, 3rd Party Applications, or internal tools. The purpose here to reduce costs and points of failure associated with on-prem hosting, and to create a one stop repository to facilitate engineering, analytics and machine learning. This enabled us to define gold standard data objects, and distribute them, enabling better business decision making on higher quality, and more informative data.
+By far the largest project this year was building out a full scale cloud based modern data platform on a medallion architecture. Ingesting both structured and unstructured data from various sources like ERP systems, 3rd Party Applications, or internal tools. The purpose here to reduce costs and points of failure associated with on-prem hosting, and to create a one stop repository for facilitating engineering, analytics and machine learning. This enableds defined gold standard data objects built across structured and unstructured sources, and distribute them. Furthering better business decision making on higher quality and more informative data.
 <br>
 <br>
 
@@ -81,11 +81,11 @@ By far the largest project this year was building out a full scale cloud based m
 
 ### Learnings
 
-This was definitely an accomplishment, and is already platforming many large reporting projects. iT has also provided us with some takeaways, a couple of which are here.
+This was definitely an accomplishment, and is already platforming many large reporting projects. As im sure you could expect, it has also left us with some takeaways, a few of which were:
 
-- **Balancing cost, data freshness and performance.** This can be a challenge when traced all the way down stream to analytics ready objects. When these stack up with actual needs, sometimes this leaves you with data at different levels of freshness. If you want to use those objects together to gather further insights, it leaves you with one more thing to consider. How do you maintain the integrity or usability of a joined set of data which may have an gap in their last refreshes.
-- **Make good architectural decisions up front.** Its important to plan out your architecture and orchestration layer up front, as it will only get harder to adjust or fix as you scale your platform. You don’t want to end up with an unmaintainable nest of pipelines you could have avoided.
-- **Object reusability and duplication.** At some point you will come across valid requirements to make slight tweaks or versions on a defined, in-use data object for another use-case or stakeholder. This appears to be a bit of a never-ending balance, and you’ll have to determine how you want to handle this. Do you maintain multiple business area level data objects, where **\*\***their**\*\*** version of x transaction table is slightly different from another areas? Do you handle this at the report level, tweaking larger overarching tables in your dashboard? Or do you enact a data Autocracy and refuse to drift from a single definition of a “Sale” (This is probably not solution).
+- **Balancing cost, data freshness and performance.** This can be a challenge when traced all the way down stream to analytics ready objects. When these stack up with actual needs, sometimes this leaves you with data from different sources, at different levels of freshness. If you want to use those objects together to gain further insights, it leaves you with one more thing to consider. How do you maintain the integrity or usability of a joined set of data which may have an gap in their last refreshes.
+- **Make good architectural decisions up front.** This is not shocking, its important to plan out your architecture and orchestration layer up front. It will only get harder to fix as you scale your platform and become more reliant on it. You don’t want to end up with an unmaintainable nest of you could have avoided.
+- **Object reusability and duplication.** At some point you will come across valid requirements for slight tweaks on versions of a defined in-use data object, for a different use-case or stakeholder. This appears to be a bit of a never-ending balance, and you’ll have to determine how you want to handle this. Do you maintain multiple business area level data objects, where _their_ version of x transaction table is slightly different? Or do you handle this at the report level, tweaking larger overarching tables in your dashboard? You could also enact a data Autocracy and refuse to drift from a single definition of a “Sale”, but this probably isn't the solution.
   <br>
   <br>
 
@@ -103,7 +103,7 @@ This was definitely an accomplishment, and is already platforming many large rep
 </div>
 <br>
 <br>
-It wouldnt have been a 2023 without a GPTwrapper-esk app sparked by the LLM and GPT-3 hype of this year. I wanted to experiment with some of these very cool new tools evolving in this landscape, so I build an application allowing users to upload a PDF document, and have a full on conversation with it powered by AI.
+It wouldnt have been a 2023 without a GPTwrapper-esk app sparked by the LLM and ChatGPT hype of this year. I wanted to experiment with some of the very cool new tools evolving in this space, so I build an application allowing users to upload a PDF document, and have a full on conversation with it, powered by AI.
 <br>
 <br>
 
@@ -133,10 +133,10 @@ It wouldnt have been a 2023 without a GPTwrapper-esk app sparked by the LLM and 
   <br>
   <br>
 
-This is by no means an original idea, tons of people were building variations on an app like this in 2023, my inspiration came from one of my previous roles where I oversaw municipal customer facing teams . They had to know and distribute a TON of information on different programs, offerings, policies, and procedures, all of which with their own specific nuances. For these teams, sifting thought the immense amount of documentation to find the single piece you were looking for was a huge challenge, leading to errors, frustration or giving up on providing accurate information. Heres a free 2024 startup idea, expand upon this platform, allowing for the context scoping to cross all documents uploaded by a user. Build a platform where orgs upload their customer support or product information documents, and provide an internal chatbot for front line teams to quickly prompt your internal storage of all offerings, P&P’s or support docs in real time, while assisting your users or customers.
+This is by no means an original idea, tons of people were building variations on apps like this in 2023, my inspiration came from one of my previous roles where I oversaw municipal customer facing teams. They had to know and distribute a TON of information on different programs, offerings, policies, and procedures, all of which with their own specific nuances. For these teams, sifting thought the immense amount of documentation to find the single piece you were looking for was a huge challenge, leading to errors, frustration, or giving up on providing accurate information all together. Heres a free 2024 startup idea, expand upon this codebase, allowing for the LLM context scoping to cross all documents uploaded by a user. Build a platform where orgs upload their customer support or policy and proceedure documents. Then provide an internal chatbot for front line teams to quickly prompt your internal knowledgebase for specific details required, all while assisting your users or customers in real time.
 <br>
 <br>
-I utilized a few cool techniques for this project, including streamed AI responses into the chat client, and a fully flushed out optimistic chat state update system complete with rollback on error for the best user experience and responsiveness. Mainly it was a fantastic dive back into building A-stack web apps after a bit of a break, getting my CRUD/REST API/UX/State Management juices flowing again.
+I utilized a few cool techniques for this project, including streamed AI responses into the chat client, and a fully flushed out optimistic chat state update system complete with rollback on error for the best user experience and responsiveness. Mainly it was a fantastic dive back into building Full-stack web apps after a bit of a break, getting my CRUD/REST API/UX/State Management juices flowing again.
 <br>
 <br>
 
@@ -146,8 +146,9 @@ I utilized a few cool techniques for this project, including streamed AI respons
 
 <img width="1000" alt="Screenshot 2023-12-27 at 2 50 45 PM" src="https://github.com/devhmac/Final_portfolio/assets/52307383/5071f112-fb83-47b8-8ba1-c48ef73c1927">
 <br>
-  <br>
-My second web app of the year, and least finished project (Unless you count my 2023 advent of code run abandoned on day 7). I intend to take this with me into 2024 to build on its functionality and design and will update the repo above with any additions. Minr enables you to ‘mine’ your product marketplace pricing data, and track it over time. A link is added, which is then scraped on a recurring schedule, being saved and updated in its MongoDB object. It then presents product pricing analytics back to the user in the form of a product dashboard, including price changes over time, % changes, and in the future search metrics. If a public link has already been added for tracking. A popular products component allows users to browse popular products already being tracked by my web scraper. This was also my first project using MongoDB which was a fun experience.
+<br>
+
+My second web app of the year, and 2023's least finished project as of right now (Unless you count my 2023 advent of code run forgotten about on day 7). I intend to take this with me into 2024 and build on its functionality and design. I will update the repo above with my additions. Minr enables you to _mine_ your product marketplace pricing data, and track it over time. Users add a link, which is then scraped on a recurring schedule, being saved and updated in its MongoDB store. It then presents product pricing analytics back to the user in the form of a product dashboard, including price changes over time/% change etc., and hopfully in the future product search metrics. A popular products component allows users to browse popular products already being tracked by my web scraper. This was also my first project using MongoDB which was a fun experience.
 <br>
 <br>
 
@@ -166,25 +167,26 @@ My second web app of the year, and least finished project (Unless you count my 2
 - Cheerio - Web Scraping HTML Parsing
 - BrightData - Scraping proxy/Anti bot detection and unlocking
 - Cron(Or an alternative)- Light weight task scheduler to scrape added products over time
+
   <br>
   <br>
 
-Doing a ton of PowerBi based analytics and dashboard development this year, I was really interested in trying my hand at a React/Web based analytics platform/dashboard, and I think this will make a cool base for that exercise.
+Doing a ton of PowerBi based analytics and dashboard development this year, I was really interested in trying my hand at a React/Web based analytics platform and I think this will make a cool base for that exercise.
 
-I came across some of other real world product offerings in this space and was shocked at the prices being payed for out of date technologies and poor ux. However I pretty quickly realized where these premiums come from, web scraping is a PAIN. In fact as of right now, I still have product prices as a hard coded value so I can work on the rest of my app functionality in peace before I go back to fiddling with the timebomb that is the typesafety on my price data parsing. Oh and did I mention different site locals are inconsistent? Once you’re thrilled to have a successful scraping pipeline for _amazon.com_, you’ll realize _amazon.ca_ has different HTML layouts and class names, breaking your parse scripts… let the frustration ensue. Lots more I plan to do in the future, like build out a user system, where you’ll be able to save and easily track your products via a full user product dashboard. I also think hosting a python based ML model API would be pretty interesting, perhaps enabling some predictive analytics, or optimal purchase time data.
+I came across some other real world product offerings in this space and was shocked at the prices being payed for out of date technologies, and poor ux. However I pretty quickly realized where these premiums come from, web scraping is a PAIN. In fact as of right now, I still have product prices as a hard coded valu, so I can work on the rest of my app functionality in peace. Soon i'll have to go back to fiddling with the timebomb that is HTML price data parsing. Did I mention different site locals are inconsistent? Once you’re thrilled to have a successful scraping pipeline for _amazon.com_, you’ll realize _amazon.ca_ has different HTML layouts and class names, breaking your parse scripts… let the frustration ensue. Currently im only set up to scrape from amazon, but adding other marketplaces could be a future addition. Lots more I plan to do in the future, like build out a user system allowing users to save and easily track products via a full user product dashboard. I also think hosting a python based ML model API would be pretty interesting, perhaps enabling some predictive analytics, or optimal purchase time data.
 <br>
 <br>
 
 # Takeaways and yearly Recap
 
 <br>
-Overall a really exciting year with a ton of learning. The bulk of my work being in the data space, picking up PySpark, working with cloud platforms like Azure, Databricks, and unstructured file storage, and building automated PowerBi dashboards. I also dabbled in a little bit of machine learning with Scikit-Learn, developing a regression model to predict the likely of yearly spend if an app user base do a set of features. Next year I want to start the DS&A grind a little more seriously and finish the neetcode 150. I started some casual leetcoding this year and had a fun time working through the problems leetcode problem sets and honing my skills.
+Overall a really exciting year with a ton of learning. The bulk of my work being in the data space, picking up PySpark, working with cloud platforms like Azure & Databricks, and unstructured file storage, or building automated PowerBi dashboards, and Full Stack web. I also dabbled in a little bit of machine learning with Scikit-Learn, developing a regression model to predict the likely of yearly spend if an app user base do a set of features. Next year I want to start the DS&A grind a little more seriously and finish the neetcode 150. I started some casual leetcoding this year and had a fun time working through the problems leetcode problem sets and honing my skills.
 <br>
-  <br>
+<br>
 
 **3 Main things I took away from this year, and want to keep top of mind for the new year**
 
-- Speed to MVP is important, build something that works, and then iterate on it once you’ve begun to solve the problem. Try not to get stuck in analysis paralysis, delaying a a functional solution by endlessly planning the most polished version usually isn’t worth the delay. Get yourself off the ground and when you determine you have the right approach, iterate and build an improved version 2.
+- Speed to MVP is important, build something that works, and then iterate on it once you’ve begun to solve the problem. Avoid analysis and planning paralysis. Delaying a functional solution by endlessly sketching out the most polished version usually isn’t worth the delay. Get yourself off the ground and then when you determine you have the right approach, iterate and build the improved version 2.
   <br>
   <br>
 - Keep an opportunity mindset. Dont look at everthing that lands on your desk as an inconvenince. See it as an opportunity to flex your muscles, create value, and build something cool.
