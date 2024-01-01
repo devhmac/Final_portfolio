@@ -2,7 +2,7 @@
 title: "My 2023 in Code - From Modern Data Platforms to the Full Stack"
 date: "Dec 30, 2023"
 author: "Devin MacGillivray"
-excerpt: "A highlight in my year of development, from Modern Data Platforms to Full-Stack Apps and LLM’s"
+excerpt: "A highlight of my 2023 in technology & software development."
 # If to be linked via sanity, or dont want it displayed in articles & case studies section, set as false
 display: true
 bannerImage: https://github.com/sendwithus/vic-startup-jobs/assets/52307383/e9ff095d-e7f6-4c5f-ba19-48fa6607d266
