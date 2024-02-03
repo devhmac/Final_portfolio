@@ -33,7 +33,7 @@ const Header = () => {
           </div>
           <div className={`${styles["tag-cmp"]} ${styles.app__flex}`}>
             <p className={styles["p-text"]}>
-              A Full-Stack Developer building awesome application and data
+              A Software Developer building awesome web application and data
               solutions.
             </p>
           </div>
