@@ -7,9 +7,14 @@ import {
 import styles from "../styles/Home.module.scss";
 import Link from "next/link";
 
-const SocialMedia = () => {
+const SocialMedia = ({ layout }) => {
+  const layoutMap = {
+    inline: "app__social-inline",
+    global: "app__social-global",
+  };
+
   return (
-    <div className={styles.app__social}>
+    <div className={`${styles.app__social} ${styles[layoutMap[layout]]}`}>
       <div>
         <a
           title="To Linkedin"

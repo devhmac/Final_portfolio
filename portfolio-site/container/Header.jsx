@@ -1,6 +1,7 @@
 import styles from "../styles/Header.module.scss";
 import { motion } from "framer-motion";
 import { AppWrap } from "../components/AppWrap";
+import SocialMedia from "../components/SocialMedia";
 
 const scaleVariants = {
   whileInView: {
@@ -36,6 +37,7 @@ const Header = () => {
               A Software Developer building awesome web application and data
               solutions.
             </p>
+            {/* <SocialMedia layout="inline" /> */}
           </div>
         </div>
         <div className={` ${styles["scroll-indicator-top"]}`}>

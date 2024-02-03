@@ -9,7 +9,7 @@ const AppWrap = (Component, idName, classNames) => function HOC() {
       id={idName}
       className={`${styles['app__container']} ${styles[`${classNames}`]}`}
     >
-      <SocialMedia />
+      <SocialMedia layout='global' />
 
       <div className={`${styles.app__wrapper} ${styles.app__flex}`}>
         <Component />

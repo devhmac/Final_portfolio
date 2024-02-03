@@ -12,7 +12,7 @@ const Blog = ({ posts }) => {
   return (
     <>
       <div className={styles["app__container"]}>
-        <SocialMedia />
+        {/* <SocialMedia /> */}
         <div className={`${styles["app__wrapper"]} `}>
           {/* one above might be the replacement wrapper */}
           <div className={` ${styles["articles-header"]}`}>

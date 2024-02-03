@@ -1,4 +1,5 @@
 import styles from "../styles/Navbar.module.scss";
+
 import Link from "next/link";
 import { SocialMedia } from "./componentsIndex";
 import { motion } from "framer-motion";
@@ -68,8 +69,6 @@ const Navbar = () => {
                   Linkedin
                 </a>{" "}
                 |{" "}
-                {/* </li>
-              <li> */}
                 <a
                   title="To Github"
                   target="_blank"
