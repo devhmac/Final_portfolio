@@ -1,5 +1,5 @@
 ---
-title: "My 2023 in Code - From Modern Data Platforms to the Full Stack"
+title: "My 2023 in Code - Data Platforms to the Full Stack"
 date: "Dec 30, 2023"
 author: "Devin MacGillivray"
 excerpt: "A highlight of my 2023 in technology & software development."

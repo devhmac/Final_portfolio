@@ -8,16 +8,16 @@
     margin-right: 10%;
   }
   @media screen and (min-width: 1000px) {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 23%;
+    margin-right: 23%;
   }
 }
 
 .card {
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  // box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  // background-color: #fff;
 }
 
 .card-page {
@@ -33,6 +33,10 @@
 .post-date {
   margin-bottom: 20px;
   padding: 3px 10px;
+  font-size: 1rem;
+  text-align: left;
+  color: var(--gray-color);
+  line-height: 1.5;
 }
 
 .post-author {
@@ -50,6 +54,11 @@
   line-height: 1.85;
   li {
     margin-left: 2rem;
+  }
+  a {
+    font-size: 1rem;
+    color: var(--gray-color);
+    line-height: 1.5;
   }
   img {
     display: flex;
@@ -86,9 +95,10 @@
     color: black;
   }
 }
-.p-text {
-  font-size: 1rem;
-  text-align: left;
-  color: var(--gray-color);
-  line-height: 1.5;
-}
+
+// .p-text {
+//   font-size: 1rem;
+//   text-align: left;
+//   color: var(--gray-color);
+//   line-height: 1.5;
+// }

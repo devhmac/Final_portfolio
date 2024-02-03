@@ -9,32 +9,49 @@
   --secondary-color: #59288d;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
-  --gray-color: #6b7688;
+  // original gray,
+  // --gray-color: #6b7688;
+  --gray-color: #414148;
   --brown-color: #46364a;
   --white-color: #ffffff;
   font-family: var(--font-base);
-  background: hsla(213, 44%, 95%, 1);
 
-  background: linear-gradient(
-    225deg,
-    hsla(213, 44%, 95%, 1) 0%,
-    hsla(36, 100%, 98%, 1) 50%,
-    hsla(213, 44%, 95%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    225deg,
-    hsla(213, 44%, 95%, 1) 0%,
-    hsla(36, 100%, 98%, 1) 50%,
-    hsla(213, 44%, 95%, 1) 100%
-  );
-
+  background: #ffffff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    225deg,
-    hsla(213, 44%, 95%, 1) 0%,
-    hsla(36, 100%, 98%, 1) 50%,
-    hsla(213, 44%, 95%, 1) 100%
-  );
+    to bottom,
+    #ffffff,
+    #f6f8f9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #f6f8f9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  // -------------- Old background
+
+  // background: hsla(213, 44%, 95%, 1);
+
+  // background: linear-gradient(
+  //   225deg,
+  //   hsla(213, 44%, 95%, 1) 0%,
+  //   hsla(36, 100%, 98%, 1) 50%,
+  //   hsla(213, 44%, 95%, 1) 100%
+  // );
+
+  // background: -moz-linear-gradient(
+  //   225deg,
+  //   hsla(213, 44%, 95%, 1) 0%,
+  //   hsla(36, 100%, 98%, 1) 50%,
+  //   hsla(213, 44%, 95%, 1) 100%
+  // );
+
+  // background: -webkit-linear-gradient(
+  //   225deg,
+  //   hsla(213, 44%, 95%, 1) 0%,
+  //   hsla(36, 100%, 98%, 1) 50%,
+  //   hsla(213, 44%, 95%, 1) 100%
+  // );
 }
 
 * {
