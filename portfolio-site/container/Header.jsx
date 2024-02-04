@@ -34,10 +34,10 @@ const Header = () => {
           </div>
           <div className={`${styles["tag-cmp"]} ${styles.app__flex}`}>
             <p className={styles["p-text"]}>
-              A Software Developer building awesome web application and data
+              A Software Developer building awesome web applications and data
               solutions.
             </p>
-            {/* <SocialMedia layout="inline" /> */}
+            <SocialMedia layout="inline" />
           </div>
         </div>
         <div className={` ${styles["scroll-indicator-top"]}`}>
