@@ -14,6 +14,7 @@ const Work = () => {
 
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
+
   useEffect(() => {
     const query = '*[_type == "works"] | order(order desc)';
 
@@ -29,12 +30,15 @@ const Work = () => {
 
     setTimeout(() => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
+      // No interativity on current filter
+      if (item === activeFilter) return;
+      // setting filter state
       if (item === "All") {
         setFilterWork(works);
       } else {
         setFilterWork(works.filter((work) => work.tags.includes(item)));
       }
-    }, 500);
+    }, 400);
   };
 
   return (
@@ -62,7 +66,7 @@ const Work = () => {
 
       <motion.div
         animate={animateCard}
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
+        transition={{ duration: 0.4, delayChildren: 0.4 }}
         className={styles["app__work-portfolio"]}
       >
         {filterWork.map((work, index) => (
