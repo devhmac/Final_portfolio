@@ -1,4 +1,5 @@
 import { NavigationDots, SocialMedia } from './componentsIndex'
+import { motion } from 'framer-motion'
 
 import styles from '../styles/Home.module.scss'
 
@@ -6,8 +7,12 @@ import styles from '../styles/Home.module.scss'
 
 const AppWrap = (Component, idName, classNames) => function HOC() {
   return (
-    <div
+    <motion.div
       id={idName}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1, delay: 0.1 }}
       className={`${styles['app__container']} ${styles[`${classNames}`]}`}
     >
       <SocialMedia layout='global' />
@@ -17,7 +22,7 @@ const AppWrap = (Component, idName, classNames) => function HOC() {
       </div>
 
       <NavigationDots active={idName} />
-    </div >
+    </motion.div >
   )
 }
 
