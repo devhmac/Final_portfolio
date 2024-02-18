@@ -1,4 +1,5 @@
 import { NavigationDots, SocialMedia } from './componentsIndex'
+
 import styles from '../styles/Home.module.scss'
 
 

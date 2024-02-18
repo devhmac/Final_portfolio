@@ -21,8 +21,10 @@ const Header = () => {
       className={`${styles["app__header"]} ${styles["app__flex"]}`}
     >
       <motion.div
+        initial={{ opacity: 0 }}
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true }}
         className={styles["app_header-info"]}
       >
         <div className={styles["app__header-badge"]}>
@@ -50,8 +52,10 @@ const Header = () => {
       </motion.div>
 
       <motion.div
+        initial={{ opacity: 0 }}
         whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true }}
         className={styles["app__header-img"]}
       >
         <img src="img/assets/new_me.JPG" alt="profile_bg" />

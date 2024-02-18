@@ -17,7 +17,12 @@ const About = () => {
   }, []);
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7, delay: 0.1, delayChildren: 2 }}
+    >
       <h2 className={styles["head-text"]}>
         About <span>Me</span>
       </h2>
@@ -28,29 +33,31 @@ const About = () => {
         {/* A committed tech enthusiast developing business intelligence solutions,
         data architecture, and analytics to enable and enhance business
         outcomes. */}
-        A committed tech enthusiast, passionate about crafting end-to-end
-        solutions for products and data. I specialize in full-stack software
-        development, data engineering, cloud platform development, analytics and
-        reporting.
+        I'm a coffee nerd with a love for rec basketball and the outdoors. I'm
+        also a committed tech enthusiast, motivated by crafting excellent
+        end-to-end solutions for products and data. I specialize in full-stack
+        software development, data engineering, cloud platform development,
+        analytics and reporting.
         <br />
         <br />
         {/* Thrilled by the Intersection of user needs and technology solutions. My
         passion for software development, data analytics & engineering, and my
         Degree in Psychology give me a unique vision when engineering and
         enhancing business intelligence for end users and their goals. */}
-        Thrilled by harmonizing user needs and technology solutions, I bring a
+        Inspired by harmonizing user needs and technology solutions, I bring a
         distinctive perspective to my passion for software development and data
-        engineering, leveraging insights from my background in psychology. This
-        blend enables me to engineer tools and insights that resonate deeply
-        with end users, aligning seamlessly with their objectives and
+        engineering by leveraging insights from my background in psychology.
+        This blend enables me to engineer tools and insights that resonate
+        deeply with end users, aligning seamlessly with their objectives and
         aspirations.
       </p>
       <div className={styles.app__profiles}>
         {abouts.map((about, index) => (
           <motion.div
+            initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: "tween" }}
+            transition={{ duration: 0.5, type: "spring" }}
             className={styles["app__profile-item"]}
             key={about.title + index}
           >
@@ -65,7 +72,7 @@ const About = () => {
         ))}
       </div>
       <SkillsRow />
-    </>
+    </motion.div>
   );
 };
 

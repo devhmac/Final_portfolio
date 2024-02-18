@@ -2,7 +2,7 @@ import styles from "../styles/SkillsRow.module.scss";
 
 const SkillsRow = () => {
   return (
-    <>
+    <div className={styles["container"]}>
       <h2 className={styles["sub-head"]}>Skills and Technology</h2>
       {/* Add studying here */}
       {/* <p className={`${styles["p-text"]} ${styles["studying"]}`}>
@@ -47,7 +47,7 @@ const SkillsRow = () => {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
