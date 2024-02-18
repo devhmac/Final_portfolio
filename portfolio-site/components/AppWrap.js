@@ -6,13 +6,14 @@ import styles from '../styles/Home.module.scss'
 
 
 const AppWrap = (Component, idName, classNames) => function HOC() {
+
   return (
     <motion.div
       id={idName}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 1, delay: 0.1 }}
+      transition={{ duration: 1, delay: 0.2, delayChildren: 1, staggerChildren: 1, when: 'beforeChildren' }}
       className={`${styles['app__container']} ${styles[`${classNames}`]}`}
     >
       <SocialMedia layout='global' />

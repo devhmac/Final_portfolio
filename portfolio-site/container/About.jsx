@@ -5,6 +5,20 @@ import { urlFor, client } from "../client";
 import { AppWrap } from "../components/AppWrap";
 import SkillsRow from "../components/SkillsRow";
 
+const skillsAnimations = {
+  initial: {
+    opacity: 0,
+  },
+  animate: (index) => ({
+    opacity: 1,
+    transition: { delay: 0.16 * index, ease: "easeIn" },
+  }),
+  hover: {
+    scale: 1.1,
+    transition: { duration: 0.5, type: "spring" },
+  },
+};
+
 const About = () => {
   const [abouts, setAbouts] = useState([]);
 
@@ -17,12 +31,7 @@ const About = () => {
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7, delay: 0.1, delayChildren: 2 }}
-    >
+    <>
       <h2 className={styles["head-text"]}>
         About <span>Me</span>
       </h2>
@@ -54,11 +63,13 @@ const About = () => {
       <div className={styles.app__profiles}>
         {abouts.map((about, index) => (
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: "spring" }}
+            variants={skillsAnimations}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            whileHover="hover"
             className={styles["app__profile-item"]}
+            custom={index}
             key={about.title + index}
           >
             <img src={urlFor(about.imgUrl)} alt={about.title + " IMG"} />
@@ -72,7 +83,7 @@ const About = () => {
         ))}
       </div>
       <SkillsRow />
-    </motion.div>
+    </>
   );
 };
 
